@@ -389,8 +389,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerMovInput: {fileID: 2746383273623454709, guid: 662e713949f0fc74081a5caccfb50b1b, type: 3}
   playerDashInput: {fileID: 1183570813811597356, guid: 662e713949f0fc74081a5caccfb50b1b, type: 3}
-  playerSpeed: 4
   rBody: {fileID: 588694642}
+  playerSpeed: 6.5
+  dashForce: 35
+  dashDuration: 0.2
+  dashCoolDown: 0.7
+  dashTimeLeft: 1
 --- !u!114 &588694645
 MonoBehaviour:
   m_ObjectHideFlags: 0
