@@ -390,9 +390,9 @@ MonoBehaviour:
   playerMovInput: {fileID: 2746383273623454709, guid: 662e713949f0fc74081a5caccfb50b1b, type: 3}
   playerDashInput: {fileID: 1183570813811597356, guid: 662e713949f0fc74081a5caccfb50b1b, type: 3}
   rBody: {fileID: 588694642}
-  playerSpeed: 6.5
+  playerSpeed: 8
   dashForce: 35
-  dashDuration: 0.2
+  dashDuration: 0.1
   dashCoolDown: 0.7
   dashTimeLeft: 1
 --- !u!114 &588694645

@@ -36,7 +36,6 @@ public class PlayerController : MonoBehaviour
     }
     void FixedUpdate()
     {
-        playerInputValue = playerMovInput.action.ReadValue<Vector2>();
         
         if (!isDashing)
         {
@@ -47,14 +46,14 @@ public class PlayerController : MonoBehaviour
     public void OnMovement(InputAction.CallbackContext context)
     {
         playerInputValue = context.ReadValue<Vector2>();
-        Debug.Log("Movement direction " + playerInputValue);
+        //Debug.Log("Movement direction " + playerInputValue);
     }
     public void OnDash(InputAction.CallbackContext context)
     {
         if (context.started && canDash == true && playerInputValue != Vector2.zero)
         {
             StartDashing();
-            Debug.Log("Dash button pressed");
+            //Debug.Log("Dash button pressed");
         }
 
     }
