@@ -174,6 +174,34 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""EnvironmentActions"",
+            ""id"": ""f0b03560-d0e1-4959-8197-9c439c977744"",
+            ""actions"": [
+                {
+                    ""name"": ""ToggleMute"",
+                    ""type"": ""Button"",
+                    ""id"": ""360f9db5-399a-4283-b735-0d9ade001c7a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""ed29e788-d059-4720-af98-4d6a70f0b6ef"",
+                    ""path"": ""<Keyboard>/#(M)"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ToggleMute"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -185,6 +213,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         m_CombatActions_Attack = m_CombatActions.FindAction("Attack", throwIfNotFound: true);
         m_CombatActions_SpecialAttack = m_CombatActions.FindAction("SpecialAttack", throwIfNotFound: true);
         m_CombatActions_Parry = m_CombatActions.FindAction("Parry", throwIfNotFound: true);
+        // EnvironmentActions
+        m_EnvironmentActions = asset.FindActionMap("EnvironmentActions", throwIfNotFound: true);
+        m_EnvironmentActions_ToggleMute = m_EnvironmentActions.FindAction("ToggleMute", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -320,6 +351,52 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         }
     }
     public CombatActionsActions @CombatActions => new CombatActionsActions(this);
+
+    // EnvironmentActions
+    private readonly InputActionMap m_EnvironmentActions;
+    private List<IEnvironmentActionsActions> m_EnvironmentActionsActionsCallbackInterfaces = new List<IEnvironmentActionsActions>();
+    private readonly InputAction m_EnvironmentActions_ToggleMute;
+    public struct EnvironmentActionsActions
+    {
+        private @PlayerControls m_Wrapper;
+        public EnvironmentActionsActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
+        public InputAction @ToggleMute => m_Wrapper.m_EnvironmentActions_ToggleMute;
+        public InputActionMap Get() { return m_Wrapper.m_EnvironmentActions; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(EnvironmentActionsActions set) { return set.Get(); }
+        public void AddCallbacks(IEnvironmentActionsActions instance)
+        {
+            if (instance == null || m_Wrapper.m_EnvironmentActionsActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_EnvironmentActionsActionsCallbackInterfaces.Add(instance);
+            @ToggleMute.started += instance.OnToggleMute;
+            @ToggleMute.performed += instance.OnToggleMute;
+            @ToggleMute.canceled += instance.OnToggleMute;
+        }
+
+        private void UnregisterCallbacks(IEnvironmentActionsActions instance)
+        {
+            @ToggleMute.started -= instance.OnToggleMute;
+            @ToggleMute.performed -= instance.OnToggleMute;
+            @ToggleMute.canceled -= instance.OnToggleMute;
+        }
+
+        public void RemoveCallbacks(IEnvironmentActionsActions instance)
+        {
+            if (m_Wrapper.m_EnvironmentActionsActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IEnvironmentActionsActions instance)
+        {
+            foreach (var item in m_Wrapper.m_EnvironmentActionsActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_EnvironmentActionsActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public EnvironmentActionsActions @EnvironmentActions => new EnvironmentActionsActions(this);
     public interface ICombatActionsActions
     {
         void OnMovement(InputAction.CallbackContext context);
@@ -327,5 +404,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         void OnAttack(InputAction.CallbackContext context);
         void OnSpecialAttack(InputAction.CallbackContext context);
         void OnParry(InputAction.CallbackContext context);
+    }
+    public interface IEnvironmentActionsActions
+    {
+        void OnToggleMute(InputAction.CallbackContext context);
     }
 }

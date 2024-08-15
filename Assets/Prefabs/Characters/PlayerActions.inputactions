@@ -152,6 +152,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "EnvironmentActions",
+            "id": "f0b03560-d0e1-4959-8197-9c439c977744",
+            "actions": [
+                {
+                    "name": "ToggleMute",
+                    "type": "Button",
+                    "id": "360f9db5-399a-4283-b735-0d9ade001c7a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "ed29e788-d059-4720-af98-4d6a70f0b6ef",
+                    "path": "<Keyboard>/#(M)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ToggleMute",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []
