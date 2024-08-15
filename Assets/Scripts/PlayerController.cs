@@ -15,12 +15,12 @@ public class PlayerController : MonoBehaviour
     private bool canAttack = true;
     private const float comboResetTime = 1.5f;
     private const float attackDelay = 0.25f;
-    public float dashForce = 50f; // Fuerza del Dash
-    public float dashDuration = 0.5f; // Duraci�n del Dash
-    public float dashCoolDown = 1f; // Tiempo que demora el jugador en pover volver a hacer un dash
-    public float dashTimeLeft = 1f; // Tiempo restante del dash ejecutado
-    private bool canDash = true; // Chequeo si el jugador puede hacer el dash
-    private bool isDashing = false; // Chequeo si el jugador est� dasheando
+    public float dashForce = 35f; 
+    public float dashDuration = 0.1f; 
+    public float dashCoolDown = 0.7f; 
+    public float dashTimeLeft = 1f; 
+    private bool canDash = true; 
+    private bool isDashing = false; 
     private Vector2 PlayerDirection => lastInput.GetLastAxisDirection(previousInput);
 
     #region MonoBehaviour methods

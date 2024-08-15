@@ -259,9 +259,9 @@ MonoBehaviour:
   - {fileID: 1612813009719484281}
   - {fileID: 5487403501502005490}
   playerSpeed: 8
-  dashForce: 35
+  dashForce: 40
   dashDuration: 0.1
-  dashCoolDown: 1
+  dashCoolDown: 0.7
   dashTimeLeft: 1
 --- !u!114 &7020684325531516197
 MonoBehaviour:
