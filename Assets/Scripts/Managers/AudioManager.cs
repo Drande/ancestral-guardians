@@ -13,7 +13,7 @@ public class AudioManager : MonoBehaviour
     private const string MusicVolumeKey = "MusicVolume";
     private const string SfxVolumeKey = "SfxVolume";
     private const string MasterVolumeKey = "MasterVolume";
-    public bool isMuted => MasterVolume == 0f;
+    public bool IsMuted => MasterVolume == 0f;
     public delegate void MuteStateChanged(bool isMuted);
     public event MuteStateChanged OnMuteStateChanged;
 
@@ -33,19 +33,12 @@ public class AudioManager : MonoBehaviour
     private void Start()
     {
         ApplySettings();
-        OnMuteStateChanged?.Invoke(isMuted);
+        OnMuteStateChanged?.Invoke(IsMuted);
         HandleSceneChange(SceneManager.GetActiveScene());
         SceneManager.activeSceneChanged += (previous, current) =>
         {
             if (previous.name != current.name) HandleSceneChange(current);
         };
-    }
-    
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.M)) {
-            ToggleMute();
-        }
     }
 
     public float MusicVolume
@@ -82,25 +75,46 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Subscribes a handler method to the mute state changed event.
+    /// When subscribed, the handler will be invoked immediately with the current mute state.
+    /// This allows for immediate feedback on the current mute status upon subscription.
+    /// </summary>
+    /// <param name="handler">The method to be invoked when the mute state changes.</param>
     public void SubscribeToMuteStateChanged(MuteStateChanged handler)
     {
         OnMuteStateChanged += handler;
         // Immediately invoke the handler with the current state
-        handler?.Invoke(isMuted);
+        handler?.Invoke(IsMuted);
     }
 
+    /// <summary>
+    /// Toggles the mute state by setting the master volume to either 0 (muted) or 1 (unmuted).
+    /// It retrieves the current master volume from the audio mixer and toggles it accordingly.
+    /// This method updates the mute state and invokes the corresponding event to notify subscribers of the change.
+    /// </summary>
     public void ToggleMute()
     {
-        if(masterMixer.GetFloat(MasterVolumeKey, out var volume)) {
+        if (masterMixer.GetFloat(MasterVolumeKey, out var volume))
+        {
             Instance.MasterVolume = volume == 0f ? 0f : 1f;
         }
     }
 
+    /// <summary>
+    /// Applies the audio settings by updating the volume levels for sound effects (SFX), music, and the master volume.
+    /// It retrieves the current volume settings from PlayerPrefs and sets them in the audio mixer.
+    /// This method is typically called at the start to ensure that the audio settings are correctly applied when the game starts.
+    /// </summary>
     public void ApplySettings()
     {
-        // Apply initial settings
+        // Apply the volume settings for sound effects
         SetSfxVolume(SfxVolume);
+
+        // Apply the volume settings for music
         SetMusicVolume(MusicVolume);
+
+        // Apply the master volume setting
         SetMasterVolume(MasterVolume);
     }
 
@@ -111,30 +125,20 @@ public class AudioManager : MonoBehaviour
     public void SetMasterVolume(float volume) => SetVolume(MasterVolumeKey, volume);
     private void SetVolume(string key, float volume) => masterMixer.SetFloat(key, Mathf.Log10(Mathf.Clamp(volume, 0.0001f, 1.0f)) * 20);
 
-    /// <summary>
-    /// Pause background music, call on Time.TimeScale changes if music should stop and resume during this action.
-    /// </summary>
-    /// <param name="isPaused">Boolean that determines if we are entering pause state.</param>
-    private void HandlePauseChange(bool isPaused)
-    {
-        if (isPaused)
-            musicSource.Pause();
-        else
-            musicSource.UnPause();
-    }
-
     private void HandleSceneChange(Scene scene)
     {
         switch (scene.name)
         {
             default:
-                if(!musicSource.isPlaying) {
-                    PlayMusic("SadPiano");
-                }
                 break;
         }
     }
 
+    /// <summary>
+    /// Plays the music track with the specified name. If the track is found, it stops any currently playing music, 
+    /// sets the track to loop, and then plays it. If the track is not found, logs a message.
+    /// </summary>
+    /// <param name="name">The name of the music track to play.</param>
     public void PlayMusic(string name)
     {
         var sound = Array.Find(musicSounds, s => s.name == name);
@@ -151,6 +155,11 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Plays the sound effect with the specified name. If the sound effect is found, it sets the clip and plays it.
+    /// If the sound effect is not found, logs a message.
+    /// </summary>
+    /// <param name="name">The name of the sound effect to play.</param>
     public void PlaySFX(string name)
     {
         var sound = Array.Find(Instance.sfxSounds, s => s.name == name);

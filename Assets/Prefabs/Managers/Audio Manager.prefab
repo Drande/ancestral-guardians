@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 274260404470271106}
   - component: {fileID: 274260404470271107}
+  - component: {fileID: 776023192}
   m_Layer: 0
   m_Name: Audio Manager
   m_TagString: Untagged
@@ -125,6 +126,72 @@ MonoBehaviour:
   musicSource: {fileID: 274260404827659225}
   sfxSource: {fileID: 274260406244230466}
   masterMixer: {fileID: 24100000, guid: edea291aa456d2c4889dadaf32993097, type: 2}
+--- !u!114 &776023192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274260404470271132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 662e713949f0fc74081a5caccfb50b1b, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 587e62f4-865b-4a58-8437-b83756202846
+    m_ActionName: CombatActions/Movement[/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: df9bd194-6741-493d-8d3f-e30dced794e3
+    m_ActionName: CombatActions/Dash[/Keyboard/leftShift]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 5dbd06f5-5a5d-4741-b3d7-5f49e649da88
+    m_ActionName: CombatActions/Attack[/Keyboard/c]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 8f4eba37-0263-4e4b-9317-c2d6a209d51f
+    m_ActionName: CombatActions/SpecialAttack[/Keyboard/x]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: f90d5f02-e17d-4c3e-96d0-218ae702994c
+    m_ActionName: CombatActions/Parry[/Keyboard/z]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 274260404470271107}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: ToggleMute
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 360f9db5-399a-4283-b735-0d9ade001c7a
+    m_ActionName: EnvironmentActions/ToggleMute[/Keyboard/m]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: EnvironmentActions
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &274260404827659226
 GameObject:
   m_ObjectHideFlags: 0
