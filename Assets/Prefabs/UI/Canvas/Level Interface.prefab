@@ -111,34 +111,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1122779346121565360}
     m_Modifications:
-    - target: {fileID: 7287217745028741269, guid: 809df256a42dd4f4cb1c824eff646ee1, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7287217745028741269, guid: 809df256a42dd4f4cb1c824eff646ee1, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7287217745028741269, guid: 809df256a42dd4f4cb1c824eff646ee1, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 8508005076083360004, guid: 2738d2d12b6bf3d4895e0254148f85bb, type: 3}
-    - target: {fileID: 7287217745028741269, guid: 809df256a42dd4f4cb1c824eff646ee1, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7287217745028741269, guid: 809df256a42dd4f4cb1c824eff646ee1, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ResetLevel
-      objectReference: {fileID: 0}
-    - target: {fileID: 7287217745028741269, guid: 809df256a42dd4f4cb1c824eff646ee1, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GameManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 7287217745028741269, guid: 809df256a42dd4f4cb1c824eff646ee1, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 7287217745145487240, guid: 809df256a42dd4f4cb1c824eff646ee1, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -329,10 +301,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pause Panel
       objectReference: {fileID: 0}
-    - target: {fileID: 4860790275328810419, guid: fa8f0fb4630dfd54396ffc8739965423, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa8f0fb4630dfd54396ffc8739965423, type: 3}
 --- !u!224 &584738396061466679 stripped
@@ -347,41 +315,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1122779346121565360}
     m_Modifications:
-    - target: {fileID: 3772260317082621912, guid: 635f0fdeda5736742a48bdaf09a7cda8, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3772260317082621912, guid: 635f0fdeda5736742a48bdaf09a7cda8, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3772260317082621912, guid: 635f0fdeda5736742a48bdaf09a7cda8, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 8508005076083360004, guid: 2738d2d12b6bf3d4895e0254148f85bb, type: 3}
-    - target: {fileID: 3772260317082621912, guid: 635f0fdeda5736742a48bdaf09a7cda8, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3772260317082621912, guid: 635f0fdeda5736742a48bdaf09a7cda8, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ResetLevel
-      objectReference: {fileID: 0}
-    - target: {fileID: 3772260317082621912, guid: 635f0fdeda5736742a48bdaf09a7cda8, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GameManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3772260317082621912, guid: 635f0fdeda5736742a48bdaf09a7cda8, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 3772260318416345017, guid: 635f0fdeda5736742a48bdaf09a7cda8, type: 3}
       propertyPath: m_Name
       value: Won Panel
-      objectReference: {fileID: 0}
-    - target: {fileID: 3772260318416345017, guid: 635f0fdeda5736742a48bdaf09a7cda8, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3772260318416345022, guid: 635f0fdeda5736742a48bdaf09a7cda8, type: 3}
       propertyPath: m_Pivot.x

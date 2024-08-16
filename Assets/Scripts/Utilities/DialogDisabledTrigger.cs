@@ -1,6 +1,10 @@
+using Unity.VisualScripting;
+
 public class DialogDisabledTrigger : DialogBase
 {
     private void OnDisable() {
-        SceneDialog.Instance?.DisplayMessageAt(transform.position, message);
+        if(!SceneDialog.Instance.IsDestroyed()) {
+            SceneDialog.Instance?.DisplayMessageAt(transform.position, message);
+        }
     }
 }
