@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
+    private GameManager() {}
 
     private void Awake() {
         if(Instance == null) {
@@ -19,7 +20,14 @@ public class GameManager : MonoBehaviour
     }
 
     public void LoadGame() {
-        SceneManager.LoadScene(GameScenes.Game);
+        var playerData = PlayerManager.Instance.Player;
+        // Load first tutorial level directly if player has not completed any levels.
+        if(SceneManager.GetActiveScene().name == GameScenes.MainMenu && !playerData.HasTutorialCompleted) {
+            SceneManager.LoadScene(GameScenes.Level);
+            return;
+        }
+
+        SceneManager.LoadScene(GameScenes.Lobby);
     }
 
     public void LoadLevel() {

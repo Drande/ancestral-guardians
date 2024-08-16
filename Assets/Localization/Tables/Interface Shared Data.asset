@@ -14,7 +14,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_TableCollectionName: Interface
   m_TableCollectionNameGuidString: 1023545784fc4a0458e85e0010b29b36
-  m_Entries: []
+  m_Entries:
+  - m_Id: 2199401980145664
+    m_Key: back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2199795598798848
+    m_Key: credits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2205581582446592
+    m_Key: music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2205915348381696
+    m_Key: sound_effects
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2208058738388992
+    m_Key: start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2208246873894912
+    m_Key: options
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

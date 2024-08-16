@@ -17,7 +17,31 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 1023545784fc4a0458e85e0010b29b36, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 2199401980145664
+    m_Localized: Volver
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2199795598798848
+    m_Localized: Creditos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2205581582446592
+    m_Localized: Musica
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2205915348381696
+    m_Localized: Efectos de sonido
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2208058738388992
+    m_Localized: Comenzar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2208246873894912
+    m_Localized: Opciones
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
