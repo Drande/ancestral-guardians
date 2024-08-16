@@ -19,6 +19,10 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(GameScenes.MainMenu);
     }
 
+    public void ResetLevel() {
+        SceneManager.LoadScene(GameScenes.Level);
+    }
+
     public void LoadGame() {
         var playerData = PlayerManager.Instance.Player;
         // Load first tutorial level directly if player has not completed any levels.
