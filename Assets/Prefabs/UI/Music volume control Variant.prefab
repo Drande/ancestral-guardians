@@ -57,27 +57,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2325722760243685707, guid: cc03f8d84f9869145a0089504b75267b, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2325722760243685707, guid: cc03f8d84f9869145a0089504b75267b, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2325722760243685707, guid: cc03f8d84f9869145a0089504b75267b, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2325722760243685707, guid: cc03f8d84f9869145a0089504b75267b, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2325722760243685707, guid: cc03f8d84f9869145a0089504b75267b, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 2325722760243685707, guid: cc03f8d84f9869145a0089504b75267b, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 2325722760243685707, guid: cc03f8d84f9869145a0089504b75267b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -129,10 +129,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2718997255842702717, guid: cc03f8d84f9869145a0089504b75267b, type: 3}
       propertyPath: m_Name
-      value: Music volume control
+      value: Music volume control Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335421945540040044, guid: cc03f8d84f9869145a0089504b75267b, type: 3}
+      propertyPath: m_text
+      value: Music
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc03f8d84f9869145a0089504b75267b, type: 3}
+--- !u!114 &1479653401227245612 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3335421945540040044, guid: cc03f8d84f9869145a0089504b75267b, type: 3}
+  m_PrefabInstance: {fileID: 4233670053803715904}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4596009273716438634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &4594680654084351728 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 361011232853150640, guid: cc03f8d84f9869145a0089504b75267b, type: 3}
@@ -144,3 +159,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &4596009273716438634 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 362903084867328810, guid: cc03f8d84f9869145a0089504b75267b, type: 3}
+  m_PrefabInstance: {fileID: 4233670053803715904}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6295712994709214658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4596009273716438634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:1023545784fc4a0458e85e0010b29b36
+    m_TableEntryReference:
+      m_KeyId: 2205581582446592
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1479653401227245612}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
