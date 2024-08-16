@@ -47,3 +47,6 @@ TagManager:
   - name: Text
     uniqueID: 3382796627
     locked: 0
+  - name: Dialog
+    uniqueID: 2283544577
+    locked: 0

@@ -187,6 +187,15 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Interact"",
+                    ""type"": ""Button"",
+                    ""id"": ""a23b440b-badf-41e9-8168-9bd5ee372c27"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -198,6 +207,17 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""ToggleMute"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""eca87ac9-e327-40db-98f4-d94ab0c4f9e6"",
+                    ""path"": ""<Keyboard>/#(E)"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -216,6 +236,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         // EnvironmentActions
         m_EnvironmentActions = asset.FindActionMap("EnvironmentActions", throwIfNotFound: true);
         m_EnvironmentActions_ToggleMute = m_EnvironmentActions.FindAction("ToggleMute", throwIfNotFound: true);
+        m_EnvironmentActions_Interact = m_EnvironmentActions.FindAction("Interact", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -356,11 +377,13 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_EnvironmentActions;
     private List<IEnvironmentActionsActions> m_EnvironmentActionsActionsCallbackInterfaces = new List<IEnvironmentActionsActions>();
     private readonly InputAction m_EnvironmentActions_ToggleMute;
+    private readonly InputAction m_EnvironmentActions_Interact;
     public struct EnvironmentActionsActions
     {
         private @PlayerControls m_Wrapper;
         public EnvironmentActionsActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
         public InputAction @ToggleMute => m_Wrapper.m_EnvironmentActions_ToggleMute;
+        public InputAction @Interact => m_Wrapper.m_EnvironmentActions_Interact;
         public InputActionMap Get() { return m_Wrapper.m_EnvironmentActions; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -373,6 +396,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @ToggleMute.started += instance.OnToggleMute;
             @ToggleMute.performed += instance.OnToggleMute;
             @ToggleMute.canceled += instance.OnToggleMute;
+            @Interact.started += instance.OnInteract;
+            @Interact.performed += instance.OnInteract;
+            @Interact.canceled += instance.OnInteract;
         }
 
         private void UnregisterCallbacks(IEnvironmentActionsActions instance)
@@ -380,6 +406,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @ToggleMute.started -= instance.OnToggleMute;
             @ToggleMute.performed -= instance.OnToggleMute;
             @ToggleMute.canceled -= instance.OnToggleMute;
+            @Interact.started -= instance.OnInteract;
+            @Interact.performed -= instance.OnInteract;
+            @Interact.canceled -= instance.OnInteract;
         }
 
         public void RemoveCallbacks(IEnvironmentActionsActions instance)
@@ -408,5 +437,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     public interface IEnvironmentActionsActions
     {
         void OnToggleMute(InputAction.CallbackContext context);
+        void OnInteract(InputAction.CallbackContext context);
     }
 }

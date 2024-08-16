@@ -4,6 +4,7 @@ using UnityEngine;
 public class SceneTextPool : MonoBehaviour
 {
     public static SceneTextPool Instance { get; private set; }
+    private SceneTextPool() {}
 
     private void Awake() {
         if(Instance == null) {
@@ -69,10 +70,5 @@ public class SceneTextPool : MonoBehaviour
         }
 
         pool = newPool;
-    }
-
-    public void ReturnObject(GameObject obj)
-    {
-        obj.SetActive(false);
     }
 }
