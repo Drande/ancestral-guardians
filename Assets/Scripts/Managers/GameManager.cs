@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
+    private GameManager() {}
 
     private void Awake() {
         if(Instance == null) {
@@ -26,7 +27,7 @@ public class GameManager : MonoBehaviour
             return;
         }
 
-        SceneManager.LoadScene(GameScenes.Game);
+        SceneManager.LoadScene(GameScenes.Lobby);
     }
 
     public void LoadLevel() {

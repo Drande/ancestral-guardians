@@ -16,6 +16,7 @@ public class AudioManager : MonoBehaviour
     public bool IsMuted => MasterVolume == 0f;
     public delegate void MuteStateChanged(bool isMuted);
     public event MuteStateChanged OnMuteStateChanged;
+    private AudioManager() {}
 
     private void Awake()
     {

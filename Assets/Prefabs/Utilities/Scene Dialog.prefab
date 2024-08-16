@@ -140,19 +140,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3201538699719972310, guid: 737b38d53a0f776439c52be033859c10, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 274.02
+      value: 67.04
       objectReference: {fileID: 0}
     - target: {fileID: 3201538699719972310, guid: 737b38d53a0f776439c52be033859c10, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 440
+      value: 420
       objectReference: {fileID: 0}
     - target: {fileID: 3201538699719972310, guid: 737b38d53a0f776439c52be033859c10, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -177.01
+      value: -53.52
       objectReference: {fileID: 0}
     - target: {fileID: 3201538699719972311, guid: 737b38d53a0f776439c52be033859c10, type: 3}
       propertyPath: m_text
-      value: Hey! press E to interact with me
+      value: Sample text
       objectReference: {fileID: 0}
     - target: {fileID: 3201538700758759734, guid: 737b38d53a0f776439c52be033859c10, type: 3}
       propertyPath: m_Name
@@ -160,7 +160,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3201538700758759734, guid: 737b38d53a0f776439c52be033859c10, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3201538700758759735, guid: 737b38d53a0f776439c52be033859c10, type: 3}
       propertyPath: m_Pivot.x
@@ -192,11 +192,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3201538700758759735, guid: 737b38d53a0f776439c52be033859c10, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 880
+      value: 840
       objectReference: {fileID: 0}
     - target: {fileID: 3201538700758759735, guid: 737b38d53a0f776439c52be033859c10, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 354.02
+      value: 107.04
       objectReference: {fileID: 0}
     - target: {fileID: 3201538700758759735, guid: 737b38d53a0f776439c52be033859c10, type: 3}
       propertyPath: m_LocalPosition.x
@@ -232,7 +232,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3201538700758759735, guid: 737b38d53a0f776439c52be033859c10, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -35
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3201538700758759735, guid: 737b38d53a0f776439c52be033859c10, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
