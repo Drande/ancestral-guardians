@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6316077175459481671}
   - component: {fileID: 6316077175459481664}
   m_Layer: 8
-  m_Name: Heal
+  m_Name: Potion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6316077175459481676}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fd4db4ee23543147b7263c296e333c4, type: 3}
   m_Name: 
