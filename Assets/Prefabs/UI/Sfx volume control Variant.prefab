@@ -33,11 +33,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 361011233177889312, guid: cc03f8d84f9869145a0089504b75267b, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 361011233391836957, guid: cc03f8d84f9869145a0089504b75267b, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2325722760243685707, guid: cc03f8d84f9869145a0089504b75267b, type: 3}
       propertyPath: m_Pivot.x
@@ -126,6 +126,10 @@ PrefabInstance:
     - target: {fileID: 2718997255842702717, guid: cc03f8d84f9869145a0089504b75267b, type: 3}
       propertyPath: m_Name
       value: Sfx volume control Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 2718997255842702717, guid: cc03f8d84f9869145a0089504b75267b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3335421945540040044, guid: cc03f8d84f9869145a0089504b75267b, type: 3}
       propertyPath: m_text

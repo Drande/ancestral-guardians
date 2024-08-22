@@ -199,6 +199,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Over Panel
       objectReference: {fileID: 0}
+    - target: {fileID: 7287217745145487241, guid: 809df256a42dd4f4cb1c824eff646ee1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 809df256a42dd4f4cb1c824eff646ee1, type: 3}
 --- !u!224 &9204242993856837740 stripped
@@ -301,6 +305,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pause Panel
       objectReference: {fileID: 0}
+    - target: {fileID: 4860790275328810419, guid: fa8f0fb4630dfd54396ffc8739965423, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8171279760062457349, guid: fa8f0fb4630dfd54396ffc8739965423, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 580
+      objectReference: {fileID: 0}
+    - target: {fileID: 8171279760062457349, guid: fa8f0fb4630dfd54396ffc8739965423, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 390
+      objectReference: {fileID: 0}
+    - target: {fileID: 8939557700171361178, guid: fa8f0fb4630dfd54396ffc8739965423, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 809
+      objectReference: {fileID: 0}
+    - target: {fileID: 8939557700171361178, guid: fa8f0fb4630dfd54396ffc8739965423, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 390
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa8f0fb4630dfd54396ffc8739965423, type: 3}
 --- !u!224 &584738396061466679 stripped
@@ -329,7 +353,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3772260318416345017, guid: 635f0fdeda5736742a48bdaf09a7cda8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3772260318416345022, guid: 635f0fdeda5736742a48bdaf09a7cda8, type: 3}
       propertyPath: m_Pivot.x
