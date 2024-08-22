@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class Health : MonoBehaviour {
+public class Health : MonoBehaviour, IDamageable {
     [SerializeField] private int maxHealth = 100;
     private int health;
     public event Action<float> OnRateChanged;
