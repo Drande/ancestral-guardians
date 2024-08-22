@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5989989538585307245}
   - component: {fileID: 5748618898195570862}
   m_Layer: 5
-  m_Name: Scene text
+  m_Name: Damage Indicator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

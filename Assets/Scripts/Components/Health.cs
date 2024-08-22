@@ -38,4 +38,12 @@ public class Health : MonoBehaviour, IDamageable {
     {
         OnRateChanged?.Invoke(health/(float)maxHealth);
     }
+
+    public void Heal(int fixedAmount, float percentage)
+    {
+        int amount = fixedAmount + (int)(percentage*maxHealth);
+        SceneTextPool.Instance.DisplayAt(transform.position, amount.ToString(), SceneTextStyle.Heal);
+        health = Math.Clamp(health + amount, 0, maxHealth);
+        NotifyRate();
+    }
 }
