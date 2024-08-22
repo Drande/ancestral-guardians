@@ -42,6 +42,10 @@ MonoBehaviour:
     m_Localized: Options
     m_Metadata:
       m_Items: []
+  - m_Id: 4409028886630400
+    m_Localized: Controls
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

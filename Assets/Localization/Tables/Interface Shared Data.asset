@@ -39,6 +39,10 @@ MonoBehaviour:
     m_Key: options
     m_Metadata:
       m_Items: []
+  - m_Id: 4409028886630400
+    m_Key: controls
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
