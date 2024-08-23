@@ -2128,32 +2128,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7020684325531516195, guid: d3d102bec4b7aca419b1f8992522b011, type: 3}
   m_PrefabInstance: {fileID: 1158312757}
   m_PrefabAsset: {fileID: 0}
---- !u!61 &462069813
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 462069797}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.46, y: 0.73}
-    newSize: {x: 1.75, y: 2.75}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 1
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.4375, y: 2.28125}
-  m_EdgeRadius: 0
 --- !u!1001 &511194208
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4113,18 +4087,6 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7020684325531516195, guid: d3d102bec4b7aca419b1f8992522b011, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7020684325531516195, guid: d3d102bec4b7aca419b1f8992522b011, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7020684325531516195, guid: d3d102bec4b7aca419b1f8992522b011, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7020684325531516195, guid: d3d102bec4b7aca419b1f8992522b011, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -4163,10 +4125,6 @@ PrefabInstance:
     - target: {fileID: 7020684325531516195, guid: d3d102bec4b7aca419b1f8992522b011, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7020684325531516195, guid: d3d102bec4b7aca419b1f8992522b011, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7020684325531516222, guid: d3d102bec4b7aca419b1f8992522b011, type: 3}
       propertyPath: m_Name

@@ -7,6 +7,7 @@ public class Health : MonoBehaviour, IDamageable {
     public event Action<float> OnRateChanged;
     [SerializeField] private float inmmunityCooldown = 0;
     private bool hasInmunity;
+    public event Action OnDeath;
 
     private void Awake() {
         health = maxHealth;
@@ -22,10 +23,18 @@ public class Health : MonoBehaviour, IDamageable {
         health = Math.Clamp(health - amount, 0, maxHealth);
         NotifyRate();
         if(health == 0) {
-            Destroy(gameObject);
+            Die();
         } else {
             hasInmunity = true;
             Invoke(nameof(ResetInmunity), inmmunityCooldown);
+        }
+    }
+
+    private void Die() {
+        if(OnDeath == null) {
+            Destroy(gameObject);
+        } else {
+            OnDeath.Invoke();
         }
     }
 

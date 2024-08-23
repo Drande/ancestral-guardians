@@ -6,6 +6,9 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private Weapon weapon;
     [SerializeField] private LayerMask attackLayer;
+    private Animator animator;
+    private Health health;
+    private bool isDead;
     public int playerSpeed = 4;
     private Rigidbody2D rBody;
     private Vector2 playerInputValue;
@@ -28,6 +31,23 @@ public class PlayerController : MonoBehaviour
     void Awake()
     {
         rBody = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+        health = GetComponent<Health>();
+        health.OnDeath += HandleDeath;
+    }
+
+    private void OnDestroy() {
+        health.OnDeath -= HandleDeath;
+    }
+
+    private void HandleDeath() {
+        isDead = true;
+        animator.SetBool("dead_b", true);
+        Invoke(nameof(DestroyCooldown), 5);
+    }
+
+    private void DestroyCooldown() {
+        Destroy(gameObject);
     }
 
     private void Update()
@@ -50,16 +70,23 @@ public class PlayerController : MonoBehaviour
     #region InputListeners
     public void OnMovement(InputAction.CallbackContext context)
     {
+        if(isDead) return;
         playerInputValue = context.ReadValue<Vector2>();
         if (playerInputValue != Vector2.zero)
         {
             previousInput = lastInput;
             lastInput = playerInputValue;
+            animator.SetFloat("speed_x_f", PlayerDirection.x);
+            animator.SetFloat("speed_y_f", PlayerDirection.y);
+        } else {
+            animator.SetFloat("speed_x_f", 0);
+            animator.SetFloat("speed_y_f", 0);
         }
     }
 
     public void OnDash(InputAction.CallbackContext context)
     {
+        if(isDead) return;
         if (context.started && canDash == true && playerInputValue != Vector2.zero)
         {
             StartDashing();
@@ -68,6 +95,7 @@ public class PlayerController : MonoBehaviour
 
     public void OnAttack(InputAction.CallbackContext context)
     {
+        if(isDead) return;
         if (!canAttack) return;
         if (comboResetCoroutine != null)
             StopCoroutine(comboResetCoroutine);
@@ -76,6 +104,7 @@ public class PlayerController : MonoBehaviour
         weapon.Attack(nextAttack, attackLayer, 10);
         nextAttack = (nextAttack + 1) % weapon.AttackCount;
         StartCoroutine(AttackCooldown());
+        animator.SetTrigger("attack_b");
         comboResetCoroutine = StartCoroutine(ResetComboCoroutine());
     }
     #endregion
