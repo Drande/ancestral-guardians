@@ -4,7 +4,8 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private GameObject[] attacks;
+    [SerializeField] private Weapon weapon;
+    [SerializeField] private LayerMask attackLayer;
     public int playerSpeed = 4;
     private Rigidbody2D rBody;
     private Vector2 playerInputValue;
@@ -71,10 +72,9 @@ public class PlayerController : MonoBehaviour
         if (comboResetCoroutine != null)
             StopCoroutine(comboResetCoroutine);
         canAttack = false;
-        var attack = attacks[nextAttack];
-        attack.transform.rotation = Quaternion.Euler(0, 0, PlayerDirection.ToRotationAngle());
-        attack.SetActive(true);
-        nextAttack = (nextAttack + 1) % attacks.Length;
+        weapon.transform.rotation = Quaternion.Euler(0, 0, PlayerDirection.ToRotationAngle());
+        weapon.Attack(nextAttack, attackLayer, 10);
+        nextAttack = (nextAttack + 1) % weapon.AttackCount;
         StartCoroutine(AttackCooldown());
         comboResetCoroutine = StartCoroutine(ResetComboCoroutine());
     }
