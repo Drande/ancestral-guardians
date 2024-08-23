@@ -121,11 +121,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 14
-        y: 184
-        width: 301
-        height: 248
+        y: 221
+        width: 267
+        height: 211
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -141,12 +141,12 @@ TextureImporter:
       name: "Bot\xF3n_4_1"
       rect:
         serializedVersion: 2
-        x: 244
-        y: 13
-        width: 310
-        height: 222
+        x: 290
+        y: 8
+        width: 257
+        height: 216
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
