@@ -14,6 +14,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TutorialLevel.unity
     guid: 49e23b50e1f8c0a44848b3a7362a31fc
+  - enabled: 1
+    path: Assets/Scenes/MazeLevel.unity
+    guid: 8bb38388c2a772f499ab2b39eab79559
+  - enabled: 1
+    path: Assets/Scenes/ArenaLevel.unity
+    guid: cb3c6ddcb5a602e4b9cbb9c010ea696e
+  - enabled: 1
+    path: Assets/Scenes/DarkLevel.unity
+    guid: a926b2f03f108d343bc81ac7f5391219
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 29d17e841c850d649a38ce4f33f5932c, type: 2}
     com.unity.localization.settings: {fileID: 11400000, guid: 1dc75a834e2d2e1468226d0d34d3bab4, type: 2}

@@ -563,11 +563,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 422979233312057691, guid: 03ac272a6907efe47971339ce3d5013c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 965441963025144174, guid: 03ac272a6907efe47971339ce3d5013c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 968639043931716459, guid: 03ac272a6907efe47971339ce3d5013c, type: 3}
       propertyPath: m_fontSize
@@ -595,7 +595,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1949242795970287957, guid: 03ac272a6907efe47971339ce3d5013c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2073173798901895710, guid: 03ac272a6907efe47971339ce3d5013c, type: 3}
       propertyPath: m_SizeDelta.x
@@ -823,15 +823,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5632383824584525293, guid: 03ac272a6907efe47971339ce3d5013c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6284143551440819983, guid: 03ac272a6907efe47971339ce3d5013c, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6284143551797363250, guid: 03ac272a6907efe47971339ce3d5013c, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6536237486391638702, guid: 03ac272a6907efe47971339ce3d5013c, type: 3}
       propertyPath: m_Color.a
@@ -839,11 +839,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6985798031028949173, guid: 03ac272a6907efe47971339ce3d5013c, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6985798031553201544, guid: 03ac272a6907efe47971339ce3d5013c, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03ac272a6907efe47971339ce3d5013c, type: 3}
@@ -3795,7 +3795,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1484069169
 RectTransform:
   m_ObjectHideFlags: 0
