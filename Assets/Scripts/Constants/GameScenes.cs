@@ -1,5 +1,5 @@
 public static class GameScenes {
     public const string MainMenu = "Main Menu";
     public const string Lobby = "Lobby";
-    public const string Level = "Level";
+    public const string TutorialLevel = "TutorialLevel";
 }

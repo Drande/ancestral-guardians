@@ -20,21 +20,24 @@ public class GameManager : MonoBehaviour
     }
 
     public void ResetLevel() {
-        SceneManager.LoadScene(GameScenes.Level);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void LoadGame() {
         var playerData = PlayerManager.Instance.Player;
         // Load first tutorial level directly if player has not completed any levels.
         if(SceneManager.GetActiveScene().name == GameScenes.MainMenu && !playerData.HasTutorialCompleted) {
-            SceneManager.LoadScene(GameScenes.Level);
+            SceneManager.LoadScene(GameScenes.TutorialLevel);
             return;
         }
 
         SceneManager.LoadScene(GameScenes.Lobby);
     }
 
-    public void LoadLevel() {
-        SceneManager.LoadScene(GameScenes.Level);
+    public void LoadLevel(string sceneName) {
+        // Maze
+        // Arena
+        // Dark
+        SceneManager.LoadScene(sceneName);
     }
 }

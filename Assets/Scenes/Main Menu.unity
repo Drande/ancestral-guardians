@@ -508,10 +508,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Manager
       objectReference: {fileID: 0}
-    - target: {fileID: 1104009099466669885, guid: cbe3c5ee3ab8fe1488f2b37357145130, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1104009099466669887, guid: cbe3c5ee3ab8fe1488f2b37357145130, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -625,10 +621,6 @@ PrefabInstance:
     - target: {fileID: 8508005076083360005, guid: 2738d2d12b6bf3d4895e0254148f85bb, type: 3}
       propertyPath: m_Name
       value: Game Manager
-      objectReference: {fileID: 0}
-    - target: {fileID: 8508005076083360005, guid: 2738d2d12b6bf3d4895e0254148f85bb, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8508005076083360027, guid: 2738d2d12b6bf3d4895e0254148f85bb, type: 3}
       propertyPath: m_RootOrder
