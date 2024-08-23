@@ -323,7 +323,7 @@ Transform:
   m_GameObject: {fileID: 7020684325531516222}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2173913, y: 1.2054795, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7020684325223740947}
@@ -398,7 +398,7 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 1
+  m_DrawMode: 0
   m_Size: {x: 1.75, y: 2.75}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
@@ -594,7 +594,7 @@ BoxCollider2D:
     oldSize: {x: 1.4375, y: 2.28125}
     newSize: {x: 1.75, y: 2.75}
     adaptiveTilingThreshold: 0.5
-    drawMode: 1
+    drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
