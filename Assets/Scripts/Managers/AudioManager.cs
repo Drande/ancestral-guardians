@@ -131,6 +131,7 @@ public class AudioManager : MonoBehaviour
         switch (scene.name)
         {
             default:
+                PlayMusic("Background01");
                 break;
         }
     }
