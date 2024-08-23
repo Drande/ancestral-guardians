@@ -4,11 +4,12 @@ using UnityEngine;
 public class ConeAttack : MonoBehaviour, IAttack {
     [SerializeField] private float damageMultiplier = 1.0f;
     [SerializeField] protected float length = 5f;
+    [SerializeField] private string attackSfx;
     [Range(1, 360)] public int angleRange = 150;
 
     public void PerformAttack(LayerMask layerMask, float attackPower)
     {
-        // Perform the raycast in the forward direction
+        AudioManager.Instance.PlaySFX(attackSfx);
         var hits = GetCollisions(layerMask, length);
         foreach (var hit in hits)
         {

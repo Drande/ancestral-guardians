@@ -4074,6 +4074,10 @@ PrefabInstance:
       propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 3848140794637905356}
+    - target: {fileID: 689143036, guid: d3d102bec4b7aca419b1f8992522b011, type: 3}
+      propertyPath: attackSfx
+      value: attack01
+      objectReference: {fileID: 0}
     - target: {fileID: 324264017445701762, guid: d3d102bec4b7aca419b1f8992522b011, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0

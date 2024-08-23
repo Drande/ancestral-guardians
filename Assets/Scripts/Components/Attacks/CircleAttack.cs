@@ -3,10 +3,12 @@ using UnityEngine;
 
 public class CircleAttack : MonoBehaviour, IAttack {
     [SerializeField] private float damageMultiplier = 1.0f;
+    [SerializeField] private string attackSfx;
     public float radius = 5f;
 
     public void PerformAttack(LayerMask layerMask, float attackPower)
     {
+        AudioManager.Instance.PlaySFX(attackSfx);
         var hits = GetCollisions(layerMask, radius);
         foreach (var hit in hits)
         {

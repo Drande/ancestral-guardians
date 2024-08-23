@@ -4,6 +4,7 @@ using UnityEngine;
 public class RectangleAttack : MonoBehaviour, IAttack {
     [SerializeField] private float damageMultiplier = 1.0f;
     [SerializeField] protected Vector2 size = Vector2.one;
+    [SerializeField] private string attackSfx;
     private Vector2 checkSize;
     private Vector2 OriginPosition => new(transform.position.x + size.x*transform.right.x/2, transform.position.y + size.y*transform.right.y);
 
@@ -13,6 +14,7 @@ public class RectangleAttack : MonoBehaviour, IAttack {
 
     public void PerformAttack(LayerMask layerMask, float attackPower)
     {
+        AudioManager.Instance.PlaySFX(attackSfx);
         var hits = GetCollisions(layerMask, size);
         foreach (var hit in hits)
         {
