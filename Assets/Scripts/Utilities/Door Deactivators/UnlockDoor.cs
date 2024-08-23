@@ -23,6 +23,7 @@ public class UnlockDoor : MonoBehaviour
         if(other.CompareTag("Player") && isUnlockable == true)
         {
             gameObject.SetActive(false);
+            playerStatus.hasKey = false;
             if (transform.parent != null)
             {
                 transform.parent.gameObject.SetActive(false);

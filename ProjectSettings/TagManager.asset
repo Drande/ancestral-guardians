@@ -8,6 +8,10 @@ TagManager:
   - LevelWall
   - Obstacles
   - Door
+  - DestructDoor01
+  - DestructDoor02
+  - DestructDoor03
+  - FinalDoor
   layers:
   - Default
   - TransparentFX
