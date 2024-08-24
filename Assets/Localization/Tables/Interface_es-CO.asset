@@ -50,6 +50,10 @@ MonoBehaviour:
     m_Localized: Niveles
     m_Metadata:
       m_Items: []
+  - m_Id: 5401660188700672
+    m_Localized: Continuar
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
