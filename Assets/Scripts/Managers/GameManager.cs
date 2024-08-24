@@ -45,4 +45,9 @@ public class GameManager : MonoBehaviour
         }
         LoadGame();
     }
+
+    public void CompleteTutorial() {
+        PlayerManager.Instance.CompleteTutorial();
+        LoadGame();
+    }
 }

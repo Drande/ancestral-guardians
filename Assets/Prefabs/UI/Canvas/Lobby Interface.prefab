@@ -281,6 +281,7 @@ GameObject:
   - component: {fileID: 4199402818698652445}
   - component: {fileID: 6897758685375165146}
   - component: {fileID: 8995131486294993577}
+  - component: {fileID: 1439464560}
   m_Layer: 5
   m_Name: Level Button
   m_TagString: Untagged
@@ -403,6 +404,19 @@ MonoBehaviour:
           m_StringArgument: MazeLevel
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1439464560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987585290525447356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 882e5857b6b20ef4dbb5a0764c1b553b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  requiredLevels: 0
 --- !u!1 &2420281000370210769
 GameObject:
   m_ObjectHideFlags: 0
@@ -415,6 +429,7 @@ GameObject:
   - component: {fileID: 4422639988068370641}
   - component: {fileID: 2467077059613575629}
   - component: {fileID: 354241000118993500}
+  - component: {fileID: 104054939}
   m_Layer: 5
   m_Name: Level Button
   m_TagString: Untagged
@@ -537,6 +552,19 @@ MonoBehaviour:
           m_StringArgument: ArenaLevel
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &104054939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2420281000370210769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 882e5857b6b20ef4dbb5a0764c1b553b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  requiredLevels: 1
 --- !u!1 &2717008476647675550
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,6 +712,7 @@ GameObject:
   - component: {fileID: 5090603992952401175}
   - component: {fileID: 6163385505611907638}
   - component: {fileID: 3938560080378573841}
+  - component: {fileID: 1491678770}
   m_Layer: 5
   m_Name: Level Button
   m_TagString: Untagged
@@ -806,6 +835,19 @@ MonoBehaviour:
           m_StringArgument: DarkLevel
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1491678770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2919650401452460980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 882e5857b6b20ef4dbb5a0764c1b553b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  requiredLevels: 2
 --- !u!1 &3014425331570444691
 GameObject:
   m_ObjectHideFlags: 0
