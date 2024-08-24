@@ -5,6 +5,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
     private GameManager() {}
+    public bool IsPaused => Time.timeScale == 0;
 
     private void Awake() {
         if(Instance == null) {
@@ -49,5 +50,13 @@ public class GameManager : MonoBehaviour
     public void CompleteTutorial() {
         PlayerManager.Instance.CompleteTutorial();
         LoadGame();
+    }
+
+    public void TogglePause() {
+        if(IsPaused) {
+            Time.timeScale = 1;
+        } else {
+            Time.timeScale = 0;
+        }
     }
 }

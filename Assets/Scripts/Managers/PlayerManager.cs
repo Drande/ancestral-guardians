@@ -25,26 +25,26 @@ public class PlayerManager : MonoBehaviour {
 
     private void Start() {
         _player = _playerService.GetPlayer();
-        OnPlayerChanged.Invoke(_player);
+        OnPlayerChanged?.Invoke(_player);
     }
 
     public Player UpdatePlayerName(string name) {
         _player = _playerService.UpdateName(name);
-        OnPlayerChanged.Invoke(_player);
+        OnPlayerChanged?.Invoke(_player);
         return _player;
     }
 
     public void UpdateLevelCompleted(int level)
     {
         _player = _playerService.UpdateLevelCompleted(level);
-        OnPlayerChanged.Invoke(_player);
+        OnPlayerChanged?.Invoke(_player);
     }
 
     public void CompleteTutorial()
     {
         _player.HasTutorialCompleted = true;
         _player = _playerService.UpdatePlayer(_player);
-        OnPlayerChanged.Invoke(_player);
+        OnPlayerChanged?.Invoke(_player);
     }
 
     public void SubscribeToPlayer(Action<Player> onLoaded) {

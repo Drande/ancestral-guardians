@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
     private bool canDash = true; 
     private bool isDashing = false; 
     private Vector2 PlayerDirection => lastInput.GetLastAxisDirection(previousInput);
+    private bool CanControl => !GameManager.Instance.IsPaused && !isDead;
 
     #region MonoBehaviour methods
     void Awake()
@@ -70,7 +71,7 @@ public class PlayerController : MonoBehaviour
     #region InputListeners
     public void OnMovement(InputAction.CallbackContext context)
     {
-        if(isDead) return;
+        if(!CanControl) return;
         playerInputValue = context.ReadValue<Vector2>();
         if (playerInputValue != Vector2.zero)
         {
@@ -86,7 +87,7 @@ public class PlayerController : MonoBehaviour
 
     public void OnDash(InputAction.CallbackContext context)
     {
-        if(isDead) return;
+        if(!CanControl) return;
         if (context.started && canDash == true && playerInputValue != Vector2.zero)
         {
             StartDashing();
@@ -95,7 +96,7 @@ public class PlayerController : MonoBehaviour
 
     public void OnAttack(InputAction.CallbackContext context)
     {
-        if(isDead) return;
+        if(!CanControl) return;
         if (!canAttack) return;
         if (comboResetCoroutine != null)
             StopCoroutine(comboResetCoroutine);
