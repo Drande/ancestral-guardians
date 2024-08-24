@@ -716,14 +716,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1122779346121565360}
     m_Modifications:
-    - target: {fileID: 3772260317082621915, guid: 635f0fdeda5736742a48bdaf09a7cda8, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 425
-      objectReference: {fileID: 0}
-    - target: {fileID: 3772260317572245549, guid: 635f0fdeda5736742a48bdaf09a7cda8, type: 3}
-      propertyPath: m_text
-      value: Back to Main
-      objectReference: {fileID: 0}
     - target: {fileID: 3772260318416345017, guid: 635f0fdeda5736742a48bdaf09a7cda8, type: 3}
       propertyPath: m_Name
       value: Won Panel

@@ -5,15 +5,16 @@ public class MoveToPlayer : MonoBehaviour
 {
     private Transform playerTransform;
     private const float MovementDuration = 0.5f;
-    private const float SearchDelay = 1f;
+    private const float SearchDelay = 0.25f;
 
-    private void Start()
+    private void OnEnable()
     {
         StartCoroutine(FindPlayer());
     }
 
     private IEnumerator FindPlayer() {
         var wait = new WaitForSeconds(SearchDelay);
+        yield return wait;
         while(true) {
             playerTransform = GameObject.Find("Player")?.transform;
             if(playerTransform == null) {
@@ -41,5 +42,9 @@ public class MoveToPlayer : MonoBehaviour
             elapsedTime += Time.deltaTime;
             yield return null;
         }
+    }
+
+    private void OnDisable() {
+        StopAllCoroutines();
     }
 }
