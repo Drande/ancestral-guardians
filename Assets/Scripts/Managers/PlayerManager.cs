@@ -28,4 +28,9 @@ public class PlayerManager : MonoBehaviour {
     public Player UpdatePlayerName(string name) {
         return _playerService.UpdateName(name);
     }
+
+    public void UpdateLevelCompleted(int level)
+    {
+        _playerService.UpdateLevelCompleted(level);
+    }
 }

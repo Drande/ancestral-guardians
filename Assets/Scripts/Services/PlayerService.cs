@@ -35,4 +35,13 @@ public class PlayerService : IPlayerService
         SavePlayer(player);
         return player;
     }
+
+    public void UpdateLevelCompleted(int level)
+    {
+        var player = GetPlayer();
+        if(player.LevelsCompleted >= level) return;
+        player.LevelsCompleted = level;
+        SavePlayer(player);
+        return;
+    }
 }

@@ -35,9 +35,14 @@ public class GameManager : MonoBehaviour
     }
 
     public void LoadLevel(string sceneName) {
-        // Maze
-        // Arena
-        // Dark
         SceneManager.LoadScene(sceneName);
+    }
+
+    public void CompleteLevel(int level) {
+        var player = PlayerManager.Instance.Player;
+        if(player.LevelsCompleted < level) {
+            PlayerManager.Instance.UpdateLevelCompleted(level);
+        }
+        LoadGame();
     }
 }
