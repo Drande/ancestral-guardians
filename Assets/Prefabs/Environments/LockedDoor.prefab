@@ -68,7 +68,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.0022640526, y: -0.041971058}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -79,7 +79,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.6332169, y: 0.6537413}
   m_EdgeRadius: 0
 --- !u!114 &921570671
 MonoBehaviour:
@@ -93,7 +93,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cabc4ee389136dd459a04a69fbd9f1bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 7020684325531516222, guid: d3d102bec4b7aca419b1f8992522b011, type: 3}
+  player: {fileID: 0}
 --- !u!1 &8616223394528151682
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,6 +106,7 @@ GameObject:
   - component: {fileID: 2811726612377397187}
   - component: {fileID: 947420940683990732}
   - component: {fileID: 3957684427225143876}
+  - component: {fileID: 1012565127}
   m_Layer: 0
   m_Name: LockedDoor
   m_TagString: Door
@@ -122,7 +123,7 @@ Transform:
   m_GameObject: {fileID: 8616223394528151682}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 6, y: 1, z: 1}
+  m_LocalScale: {x: 3.5844436, y: 3.0938, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 921570670}
@@ -142,18 +143,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0011320114, y: -0.09574525}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1.67, y: 0.5}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.0029936, y: 0.2943721}
   m_EdgeRadius: 0
 --- !u!212 &947420940683990732
 SpriteRenderer:
@@ -196,8 +197,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 1, g: 0.9903463, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: a967719d77caa464d84aa689d6793435, type: 3}
+  m_Color: {r: 1, g: 0.64790606, b: 0.0056602955, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -221,3 +222,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileSize: 1
   tileOffset: {x: 0, y: 0, z: 0}
+--- !u!114 &1012565127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8616223394528151682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f7b1d0fb590ebf4a84c6fe92f5f564d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: That was easy!
+  instant: 0
