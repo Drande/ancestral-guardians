@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class UnlockDoor : MonoBehaviour
 {
-    public GameObject player;
+    private GameObject player;
     private PlayerStatus playerStatus;
 
     private bool isUnlockable;
     private void Start()
     {
+        player = GameObject.Find("Player");
         playerStatus = player.GetComponent<PlayerStatus>();
     }
 
