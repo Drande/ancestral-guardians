@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class HealthIndicator : Indicator {
     [SerializeField] private Health measurable;
 
-    private void Awake() {
+    private void OnEnable() {
         measurable.OnRateChanged += UpdateIndicator;
         indicator = GetComponent<Slider>();
     }

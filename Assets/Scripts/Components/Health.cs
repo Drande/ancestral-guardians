@@ -36,6 +36,7 @@ public class Health : MonoBehaviour, IDamageable {
         } else {
             OnDeath.Invoke();
         }
+        OnDeath = null;
         if(gameObject.TryGetComponent<Drops>(out var drops)) {
             drops.Drop();
         }

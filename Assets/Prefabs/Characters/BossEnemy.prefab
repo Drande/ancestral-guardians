@@ -371,6 +371,10 @@ PrefabInstance:
       propertyPath: measurable
       value: 
       objectReference: {fileID: 510118303}
+    - target: {fileID: 1754476800182670166, guid: d051b2826f4508540b643fa56aebd2d1, type: 3}
+      propertyPath: m_Value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5408006138504788501, guid: d051b2826f4508540b643fa56aebd2d1, type: 3}
       propertyPath: m_Name
       value: Health bar

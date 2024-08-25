@@ -5,7 +5,7 @@ public abstract class WeaponBase : MonoBehaviour {
     public int AttackCount => attacks.Length;
     protected bool isReady = true;
 
-    protected void Start() {
+    protected void Awake() {
         attacks = GetComponentsInChildren<IAttack>();
     }
 

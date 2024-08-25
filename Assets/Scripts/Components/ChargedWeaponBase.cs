@@ -5,7 +5,7 @@ public abstract class ChargedWeaponBase : MonoBehaviour {
     protected IChargedAttack[] attacks;
     public int AttackCount => attacks.Length;
 
-    protected void Start() {
+    protected void Awake() {
         attacks = GetComponentsInChildren<IChargedAttack>();
     }
 
