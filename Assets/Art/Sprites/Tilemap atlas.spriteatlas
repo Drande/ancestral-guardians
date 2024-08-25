@@ -570,6 +570,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 4b3e448bc26af96449d37351620f73cf, type: 3}
   - {fileID: 21300000, guid: 7f58f6ebb4a35ac4a98d2491901dcca5, type: 3}
   - {fileID: 21300000, guid: 9628481c6fd321d43b946b526f8c7e73, type: 3}
+  - {fileID: 21300000, guid: a967719d77caa464d84aa689d6793435, type: 3}
   - {fileID: -929029770, guid: 38d1eabd7faa9c54e875d82bc3586104, type: 3}
   - {fileID: -2007993532, guid: 38d1eabd7faa9c54e875d82bc3586104, type: 3}
   - {fileID: 802018839, guid: 38d1eabd7faa9c54e875d82bc3586104, type: 3}
@@ -1218,6 +1219,7 @@ SpriteAtlas:
   - Hurt
   - Run+Attack
   - Jump
+  - GateDoor01
   - '[64x64] Rocky Slabs_32'
   - '[64x64] Rocky Slabs_33'
   - '[64x64] Rocky Slabs_30'
