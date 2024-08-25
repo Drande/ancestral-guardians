@@ -148,7 +148,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3201538699719972310, guid: 737b38d53a0f776439c52be033859c10, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 174.9
       objectReference: {fileID: 0}
     - target: {fileID: 3201538699719972310, guid: 737b38d53a0f776439c52be033859c10, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -156,11 +156,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3201538699719972310, guid: 737b38d53a0f776439c52be033859c10, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -40
+      value: -127.45
       objectReference: {fileID: 0}
     - target: {fileID: 3201538700758759734, guid: 737b38d53a0f776439c52be033859c10, type: 3}
       propertyPath: m_Name
       value: Message Panel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3201538700758759734, guid: 737b38d53a0f776439c52be033859c10, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3201538700758759735, guid: 737b38d53a0f776439c52be033859c10, type: 3}
       propertyPath: m_Pivot.x
@@ -192,11 +196,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3201538700758759735, guid: 737b38d53a0f776439c52be033859c10, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 880
       objectReference: {fileID: 0}
     - target: {fileID: 3201538700758759735, guid: 737b38d53a0f776439c52be033859c10, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 254.9
       objectReference: {fileID: 0}
     - target: {fileID: 3201538700758759735, guid: 737b38d53a0f776439c52be033859c10, type: 3}
       propertyPath: m_LocalPosition.x
