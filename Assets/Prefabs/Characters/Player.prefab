@@ -532,7 +532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4f3649c07566274aa19b8e3bcf61437, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 300
   inmmunityCooldown: 0
 --- !u!114 &462069805
 MonoBehaviour:
@@ -632,6 +632,90 @@ PrefabInstance:
       propertyPath: measurable
       value: 
       objectReference: {fileID: 7020684325531516198}
+    - target: {fileID: 500333842456792099, guid: d051b2826f4508540b643fa56aebd2d1, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 500333842456792099, guid: d051b2826f4508540b643fa56aebd2d1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 1754476800182670166, guid: d051b2826f4508540b643fa56aebd2d1, type: 3}
+      propertyPath: m_Colors.m_NormalColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754476800182670166, guid: d051b2826f4508540b643fa56aebd2d1, type: 3}
+      propertyPath: m_Colors.m_NormalColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754476800182670166, guid: d051b2826f4508540b643fa56aebd2d1, type: 3}
+      propertyPath: m_Colors.m_PressedColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754476800182670166, guid: d051b2826f4508540b643fa56aebd2d1, type: 3}
+      propertyPath: m_Colors.m_PressedColor.b
+      value: 0.78431374
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754476800182670166, guid: d051b2826f4508540b643fa56aebd2d1, type: 3}
+      propertyPath: m_Colors.m_PressedColor.g
+      value: 0.78431374
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754476800182670166, guid: d051b2826f4508540b643fa56aebd2d1, type: 3}
+      propertyPath: m_Colors.m_PressedColor.r
+      value: 0.78431374
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754476800182670166, guid: d051b2826f4508540b643fa56aebd2d1, type: 3}
+      propertyPath: m_Colors.m_ColorMultiplier
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754476800182670166, guid: d051b2826f4508540b643fa56aebd2d1, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.a
+      value: 0.5019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754476800182670166, guid: d051b2826f4508540b643fa56aebd2d1, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 0.78431374
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754476800182670166, guid: d051b2826f4508540b643fa56aebd2d1, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 0.78431374
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754476800182670166, guid: d051b2826f4508540b643fa56aebd2d1, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 0.78431374
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754476800182670166, guid: d051b2826f4508540b643fa56aebd2d1, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754476800182670166, guid: d051b2826f4508540b643fa56aebd2d1, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.b
+      value: 0.9607843
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754476800182670166, guid: d051b2826f4508540b643fa56aebd2d1, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.g
+      value: 0.9607843
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754476800182670166, guid: d051b2826f4508540b643fa56aebd2d1, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.r
+      value: 0.9607843
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754476800182670166, guid: d051b2826f4508540b643fa56aebd2d1, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754476800182670166, guid: d051b2826f4508540b643fa56aebd2d1, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.b
+      value: 0.9607843
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754476800182670166, guid: d051b2826f4508540b643fa56aebd2d1, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.g
+      value: 0.9607843
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754476800182670166, guid: d051b2826f4508540b643fa56aebd2d1, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0.9607843
+      objectReference: {fileID: 0}
     - target: {fileID: 5408006138504788501, guid: d051b2826f4508540b643fa56aebd2d1, type: 3}
       propertyPath: m_Name
       value: Health bar

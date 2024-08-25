@@ -1,9 +1,10 @@
 using System;
+using UnityEngine;
 
 [Serializable]
 public record Player {
-    public string Name { get; set; } = string.Empty;
-    public Guid AvatarId { get; set; }
-    public int LevelsCompleted { get; set; } = 0;
-    public bool HasTutorialCompleted { get; set; } = false;
+    public string Name = string.Empty;
+    public Guid AvatarId;
+    public int LevelsCompleted;
+    public bool HasTutorialCompleted;
 }

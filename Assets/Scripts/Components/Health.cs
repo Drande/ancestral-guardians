@@ -36,6 +36,9 @@ public class Health : MonoBehaviour, IDamageable {
         } else {
             OnDeath.Invoke();
         }
+        if(gameObject.TryGetComponent<Drops>(out var drops)) {
+            drops.Drop();
+        }
     }
 
     private void ResetInmunity()
