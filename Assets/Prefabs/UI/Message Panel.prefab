@@ -36,8 +36,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 440, y: -70}
-  m_SizeDelta: {x: 800, y: 60}
+  m_AnchoredPosition: {x: 440, y: -127.45}
+  m_SizeDelta: {x: 800, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3201538699719972308
 CanvasRenderer:
@@ -67,7 +67,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ejemplo!
+  m_text: El guerrero avanza por el terreno, vigilando a su alrededor en busca de
+    enemigos.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6c8adb52de4dabf46b966ba861e2cfd1, type: 2}
   m_sharedMaterial: {fileID: -4557310233931959009, guid: 6c8adb52de4dabf46b966ba861e2cfd1, type: 2}
@@ -94,15 +95,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 55
+  m_fontSizeBase: 55
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -169,7 +170,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3201538700758759735
 RectTransform:
   m_ObjectHideFlags: 0
@@ -189,7 +190,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1000, y: 500}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3201538700758759733
 CanvasRenderer:
@@ -219,7 +220,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f7d05af1f9ee1e24fac8b21302c493ee, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9b417536200871645a09870f6a9cfc08, type: 3}
   m_Type: 2
   m_PreserveAspect: 0
   m_FillCenter: 1
