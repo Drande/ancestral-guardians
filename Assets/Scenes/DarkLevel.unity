@@ -2136,6 +2136,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3fc2d9aa6bf18684aa9fa8c774c4cb2d, type: 3}
+--- !u!1 &735705758 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9204242993856837741, guid: 3fc2d9aa6bf18684aa9fa8c774c4cb2d, type: 3}
+  m_PrefabInstance: {fileID: 735705757}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &786408285
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5158,6 +5163,14 @@ PrefabInstance:
     - target: {fileID: 462069805, guid: d3d102bec4b7aca419b1f8992522b011, type: 3}
       propertyPath: hasKey
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 462069806, guid: d3d102bec4b7aca419b1f8992522b011, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 735705758}
+    - target: {fileID: 462069806, guid: d3d102bec4b7aca419b1f8992522b011, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
       objectReference: {fileID: 0}
     - target: {fileID: 324264017445701762, guid: d3d102bec4b7aca419b1f8992522b011, type: 3}
       propertyPath: m_AnchorMax.x

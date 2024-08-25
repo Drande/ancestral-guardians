@@ -19,6 +19,7 @@ public class Health : MonoBehaviour, IDamageable {
 
     public void TakeDamage(int amount) {
         if(hasInmunity) return;
+        if(health == 0) return;
         SceneTextPool.Instance.DisplayAt(transform.position, amount.ToString());
         health = Math.Clamp(health - amount, 0, maxHealth);
         NotifyRate();
