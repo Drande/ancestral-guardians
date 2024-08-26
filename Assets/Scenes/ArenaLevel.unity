@@ -1230,8 +1230,28 @@ PrefabInstance:
     m_TransformParent: {fileID: 1560115563}
     m_Modifications:
     - target: {fileID: 510118304, guid: 05dd5df091950554ab1cbe8d0f723756, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 510118304, guid: 05dd5df091950554ab1cbe8d0f723756, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2070812153}
+    - target: {fileID: 510118304, guid: 05dd5df091950554ab1cbe8d0f723756, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 510118304, guid: 05dd5df091950554ab1cbe8d0f723756, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 510118304, guid: 05dd5df091950554ab1cbe8d0f723756, type: 3}
       propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 510118304, guid: 05dd5df091950554ab1cbe8d0f723756, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2567844151601052896, guid: 05dd5df091950554ab1cbe8d0f723756, type: 3}
       propertyPath: m_Name
@@ -9005,6 +9025,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3627147500507136155, guid: 3fc2d9aa6bf18684aa9fa8c774c4cb2d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -37.327087
+      objectReference: {fileID: 0}
+    - target: {fileID: 4159048284866614874, guid: 3fc2d9aa6bf18684aa9fa8c774c4cb2d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -39.99994
+      objectReference: {fileID: 0}
     - target: {fileID: 5283152903084840696, guid: 3fc2d9aa6bf18684aa9fa8c774c4cb2d, type: 3}
       propertyPath: m_Name
       value: Level Interface
@@ -9018,6 +9046,11 @@ PrefabInstance:
 --- !u!1 &2070812152 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9204242993856837741, guid: 3fc2d9aa6bf18684aa9fa8c774c4cb2d, type: 3}
+  m_PrefabInstance: {fileID: 2070812151}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2070812153 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5579492154321267434, guid: 3fc2d9aa6bf18684aa9fa8c774c4cb2d, type: 3}
   m_PrefabInstance: {fileID: 2070812151}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2082040946
