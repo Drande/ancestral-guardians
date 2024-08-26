@@ -42,7 +42,6 @@ public class EnemyStateManager : MonoBehaviour {
 
     public void LookAtTarget() {
         if(!weapon.IsAttacking && target != null) {
-            transform.LookAt2DSnapped(target);
             weapon.transform.LookAt2D(target);
         }
     }
