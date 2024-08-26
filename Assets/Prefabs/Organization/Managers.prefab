@@ -179,6 +179,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5707989489913415311}
     m_Modifications:
+    - target: {fileID: 776023192, guid: d47afe7282c6d1146af91de323e7a4a9, type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 776023192, guid: d47afe7282c6d1146af91de323e7a4a9, type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_ActionId
+      value: a23b440b-badf-41e9-8168-9bd5ee372c27
+      objectReference: {fileID: 0}
+    - target: {fileID: 776023192, guid: d47afe7282c6d1146af91de323e7a4a9, type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_ActionName
+      value: EnvironmentActions/Interact[/Keyboard/e]
+      objectReference: {fileID: 0}
     - target: {fileID: 274260404470271106, guid: d47afe7282c6d1146af91de323e7a4a9, type: 3}
       propertyPath: m_RootOrder
       value: 0

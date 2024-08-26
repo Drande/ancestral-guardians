@@ -262,6 +262,15 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""45bd2cca-98d3-4097-bd1e-0dfb4dec0f79"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -286,6 +295,28 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""action"": ""Interact"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""378d47cf-c09d-477f-9e48-a8b56cad8398"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ad2f91d3-62ac-4e74-a90c-a283e2454057"",
+                    ""path"": ""<Keyboard>/#(P)"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -303,6 +334,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         m_EnvironmentActions = asset.FindActionMap("EnvironmentActions", throwIfNotFound: true);
         m_EnvironmentActions_ToggleMute = m_EnvironmentActions.FindAction("ToggleMute", throwIfNotFound: true);
         m_EnvironmentActions_Interact = m_EnvironmentActions.FindAction("Interact", throwIfNotFound: true);
+        m_EnvironmentActions_Pause = m_EnvironmentActions.FindAction("Pause", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -444,12 +476,14 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     private List<IEnvironmentActionsActions> m_EnvironmentActionsActionsCallbackInterfaces = new List<IEnvironmentActionsActions>();
     private readonly InputAction m_EnvironmentActions_ToggleMute;
     private readonly InputAction m_EnvironmentActions_Interact;
+    private readonly InputAction m_EnvironmentActions_Pause;
     public struct EnvironmentActionsActions
     {
         private @PlayerControls m_Wrapper;
         public EnvironmentActionsActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
         public InputAction @ToggleMute => m_Wrapper.m_EnvironmentActions_ToggleMute;
         public InputAction @Interact => m_Wrapper.m_EnvironmentActions_Interact;
+        public InputAction @Pause => m_Wrapper.m_EnvironmentActions_Pause;
         public InputActionMap Get() { return m_Wrapper.m_EnvironmentActions; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -465,6 +499,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Interact.started += instance.OnInteract;
             @Interact.performed += instance.OnInteract;
             @Interact.canceled += instance.OnInteract;
+            @Pause.started += instance.OnPause;
+            @Pause.performed += instance.OnPause;
+            @Pause.canceled += instance.OnPause;
         }
 
         private void UnregisterCallbacks(IEnvironmentActionsActions instance)
@@ -475,6 +512,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Interact.started -= instance.OnInteract;
             @Interact.performed -= instance.OnInteract;
             @Interact.canceled -= instance.OnInteract;
+            @Pause.started -= instance.OnPause;
+            @Pause.performed -= instance.OnPause;
+            @Pause.canceled -= instance.OnPause;
         }
 
         public void RemoveCallbacks(IEnvironmentActionsActions instance)
@@ -504,5 +544,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     {
         void OnToggleMute(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
     }
 }

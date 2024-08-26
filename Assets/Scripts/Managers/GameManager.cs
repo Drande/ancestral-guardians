@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -6,6 +7,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
     private GameManager() {}
     public bool IsPaused => Time.timeScale == 0;
+    public event Action<bool> OnPauseChanged;
 
     private void Awake() {
         if(Instance == null) {
@@ -60,5 +62,6 @@ public class GameManager : MonoBehaviour
         } else {
             Time.timeScale = 0;
         }
+        Instance.OnPauseChanged?.Invoke(IsPaused);
     }
 }
