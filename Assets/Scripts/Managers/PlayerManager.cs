@@ -17,7 +17,9 @@ public class PlayerManager : MonoBehaviour {
     private void Awake() {
         if(Instance == null) {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
+            if(gameObject.transform.parent == null) {
+                DontDestroyOnLoad(gameObject);
+            }
         } else {
             Destroy(gameObject);
         }

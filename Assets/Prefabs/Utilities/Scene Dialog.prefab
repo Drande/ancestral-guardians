@@ -158,6 +158,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -127.45
       objectReference: {fileID: 0}
+    - target: {fileID: 3201538700758759732, guid: 737b38d53a0f776439c52be033859c10, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3201538700758759734, guid: 737b38d53a0f776439c52be033859c10, type: 3}
       propertyPath: m_Name
       value: Message Panel
