@@ -145,6 +145,7 @@ public class AudioManager : MonoBehaviour
     /// <param name="name">The name of the music track to play.</param>
     public void PlayMusic(string name)
     {
+        if(string.IsNullOrWhiteSpace(name)) return;
         var sound = Array.Find(musicSounds, s => s.name == name);
         if (sound != null)
         {
@@ -166,6 +167,7 @@ public class AudioManager : MonoBehaviour
     /// <param name="name">The name of the sound effect to play.</param>
     public void PlaySFX(string name)
     {
+        if(string.IsNullOrWhiteSpace(name)) return;
         var sound = Array.Find(Instance.sfxSounds, s => s.name == name);
         if (sound != null)
         {
