@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     private Animator animator;
     private Health health;
     private bool isDead;
+    public bool hasKey;
     public int playerSpeed = 4;
     private Rigidbody2D rBody;
     private Vector2 playerInputValue;

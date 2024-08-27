@@ -303,7 +303,6 @@ GameObject:
   - component: {fileID: 7020684325531516196}
   - component: {fileID: 7020684325531516197}
   - component: {fileID: 7020684325531516198}
-  - component: {fileID: 462069805}
   - component: {fileID: 462069806}
   - component: {fileID: 462069813}
   - component: {fileID: 462069821}
@@ -421,6 +420,7 @@ MonoBehaviour:
   attackLayer:
     serializedVersion: 2
     m_Bits: 640
+  hasKey: 0
   playerSpeed: 8
   dashForce: 40
   dashDuration: 0.1
@@ -534,19 +534,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 300
   inmmunityCooldown: 0
---- !u!114 &462069805
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7020684325531516222}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97c37a6645bbc6c44a14cfc6cd19cc77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hasKey: 0
 --- !u!114 &462069806
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -6,8 +6,4 @@ public class PlayerStatus : MonoBehaviour
 {
     public bool hasKey;
 
-    private void Start()
-    {
-        hasKey = false;
-    }
 }
