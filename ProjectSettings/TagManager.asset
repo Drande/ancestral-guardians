@@ -12,6 +12,7 @@ TagManager:
   - DestructDoor02
   - DestructDoor03
   - FinalDoor
+  - NPC
   layers:
   - Default
   - TransparentFX
@@ -23,7 +24,7 @@ TagManager:
   - Enemies
   - Collectibles
   - Destructibles
-  - 
+  - NPC
   - 
   - 
   - 

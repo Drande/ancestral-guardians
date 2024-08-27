@@ -397,7 +397,6 @@ SpriteAtlas:
   - {fileID: -1852604086, guid: 70848df41d0d85c4ea70fc2cac940e26, type: 3}
   - {fileID: 434988320, guid: 70848df41d0d85c4ea70fc2cac940e26, type: 3}
   - {fileID: 21300000, guid: c1894cc612bea1f4eb5c085a3bb5e7d6, type: 3}
-  - {fileID: 21300000, guid: d30e0ad634ca98741aef25f028177188, type: 3}
   - {fileID: 21300000, guid: ce769e17238d8934687c7907427a7d13, type: 3}
   - {fileID: 21300000, guid: 94cf7087381522a48b2566e0c78c74d7, type: 3}
   - {fileID: 21300022, guid: da5de9184940bed23d65a2dc8a7b975a, type: 3}
@@ -684,7 +683,6 @@ SpriteAtlas:
   - {fileID: 1371513133, guid: 9d98391eec327d0458c9ed5b97d96d9b, type: 3}
   - {fileID: 2056564725, guid: 9d98391eec327d0458c9ed5b97d96d9b, type: 3}
   - {fileID: 21300000, guid: 99930a4e6ceb5e1438d264495abb9df9, type: 3}
-  - {fileID: 21300000, guid: b550a10f6a9800944bf28cca93419eb3, type: 3}
   - {fileID: 21300000, guid: bf1fa3bf3fcedea4aaf9b41a655dc63d, type: 3}
   m_PackedSpriteNamesToIndex:
   - Walk
@@ -1046,7 +1044,6 @@ SpriteAtlas:
   - '[64x64] Dungeon Bricks Shadow Connection_11'
   - '[64x64] Dungeon Bricks Shadow Connection_10'
   - Sprite-0016
-  - 15 by 15 orthogonal maze
   - Attack_2
   - Attack_1
   - TopDown StoneAndBridge - DungeonFloor UNITY_11
@@ -1333,7 +1330,6 @@ SpriteAtlas:
   - '[64x64] Dungeon Bricks Shadow_44'
   - '[64x64] Dungeon Bricks Shadow_45'
   - Run
-  - Regular_hexagon.svg
   - TX Props
   m_RenderDataMap: {}
   m_Tag: Tilemap atlas
