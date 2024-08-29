@@ -232,11 +232,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4594680655582037856, guid: 06968cf9193ba0d47853598fe2cbbb10, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4594680655695254109, guid: 06968cf9193ba0d47853598fe2cbbb10, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06968cf9193ba0d47853598fe2cbbb10, type: 3}
@@ -348,11 +348,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7263417585501471481, guid: 6d093ddc7aa179e40aeb2b8bee045b5c, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7263417585522481092, guid: 6d093ddc7aa179e40aeb2b8bee045b5c, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d093ddc7aa179e40aeb2b8bee045b5c, type: 3}
@@ -564,7 +564,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5582765529138890004, guid: 7346805cb500f08419c941c17e510dd3, type: 3}
       propertyPath: m_Name
-      value: Options Panel
+      value: Options Panel Variant
       objectReference: {fileID: 0}
     - target: {fileID: 5582765529138890004, guid: 7346805cb500f08419c941c17e510dd3, type: 3}
       propertyPath: m_IsActive

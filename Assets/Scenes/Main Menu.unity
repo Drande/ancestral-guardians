@@ -217,6 +217,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Interface
       objectReference: {fileID: 0}
+    - target: {fileID: 5632383824584525293, guid: 03ac272a6907efe47971339ce3d5013c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632383824969215983, guid: 03ac272a6907efe47971339ce3d5013c, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632383824969215983, guid: 03ac272a6907efe47971339ce3d5013c, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632383824969215983, guid: 03ac272a6907efe47971339ce3d5013c, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03ac272a6907efe47971339ce3d5013c, type: 3}
 --- !u!1 &448748399
@@ -587,12 +603,12 @@ GameObject:
   - component: {fileID: 912489482}
   - component: {fileID: 912489486}
   m_Layer: 5
-  m_Name: CanvasEmpresa
+  m_Name: CanvasCompany
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &912489482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -701,7 +717,7 @@ GameObject:
   - component: {fileID: 985709714}
   - component: {fileID: 985709713}
   m_Layer: 0
-  m_Name: InicioGrupo
+  m_Name: StartGroup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
