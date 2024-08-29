@@ -48,8 +48,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicSounds:
-  - audioClip: {fileID: 8300000, guid: 8b9cb98176c68a2409b2dc72d30e95a3, type: 3}
-    name: Background01
+  - audioClip: {fileID: 8300000, guid: f4553ddaabf154f419fdb3d9b1f1d999, type: 3}
+    name: MainMenu
+  - audioClip: {fileID: 8300000, guid: 668863e67aba0c448aaf6aef0ece175f, type: 3}
+    name: Tutorial
+  - audioClip: {fileID: 8300000, guid: a527711dc859491479ae29db85c17e14, type: 3}
+    name: Lobby
+  - audioClip: {fileID: 8300000, guid: 32c6483f6784d79408b1e993a80d7ac6, type: 3}
+    name: Arena
+  - audioClip: {fileID: 8300000, guid: ee48334178c9a97448159ebb1ac530fe, type: 3}
+    name: Dark
+  - audioClip: {fileID: 8300000, guid: 5f4236e822a187241a0f4133bd1359d2, type: 3}
+    name: Maze
   sfxSounds:
   - audioClip: {fileID: 8300000, guid: 5a0d0d51cbe7d4f458d2ec0a233b584a, type: 3}
     name: attack01
@@ -117,6 +127,14 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 360f9db5-399a-4283-b735-0d9ade001c7a
     m_ActionName: EnvironmentActions/ToggleMute[/Keyboard/m]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: a23b440b-badf-41e9-8168-9bd5ee372c27
+    m_ActionName: EnvironmentActions/Interact[/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 45bd2cca-98d3-4097-bd1e-0dfb4dec0f79
+    m_ActionName: EnvironmentActions/Pause[/Keyboard/escape,/Keyboard/p]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: EnvironmentActions
