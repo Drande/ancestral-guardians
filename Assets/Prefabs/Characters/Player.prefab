@@ -424,7 +424,7 @@ MonoBehaviour:
   playerSpeed: 8
   dashForce: 50
   dashDuration: 0.1
-  dashCoolDown: 5
+  dashCoolDown: 0.5
   dashTimeLeft: 1
 --- !u!114 &7020684325531516197
 MonoBehaviour:
