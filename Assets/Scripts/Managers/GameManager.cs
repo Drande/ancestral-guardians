@@ -21,14 +21,17 @@ public class GameManager : MonoBehaviour
     }
 
     public void LoadMenu() {
+        if(IsPaused) TogglePause();
         SceneManager.LoadScene(GameScenes.MainMenu);
     }
 
     public void ResetLevel() {
+        if(IsPaused) TogglePause();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void LoadGame() {
+        if(IsPaused) TogglePause();
         var playerData = PlayerManager.Instance.Player;
         // Load first tutorial level directly if player has not completed any levels.
         if(SceneManager.GetActiveScene().name == GameScenes.MainMenu && !playerData.HasTutorialCompleted) {
@@ -40,6 +43,7 @@ public class GameManager : MonoBehaviour
     }
 
     public void LoadLevel(string sceneName) {
+        if(IsPaused) TogglePause();
         SceneManager.LoadScene(sceneName);
     }
 

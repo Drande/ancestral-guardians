@@ -8,6 +8,22 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 361011232853150640, guid: cc03f8d84f9869145a0089504b75267b, type: 3}
+      propertyPath: m_SpriteState.m_PressedSprite
+      value: 
+      objectReference: {fileID: 191923712, guid: c8c6266c7d9efac4b8add02e9aa15c0b, type: 3}
+    - target: {fileID: 361011232853150640, guid: cc03f8d84f9869145a0089504b75267b, type: 3}
+      propertyPath: m_SpriteState.m_DisabledSprite
+      value: 
+      objectReference: {fileID: 191923712, guid: c8c6266c7d9efac4b8add02e9aa15c0b, type: 3}
+    - target: {fileID: 361011232853150640, guid: cc03f8d84f9869145a0089504b75267b, type: 3}
+      propertyPath: m_SpriteState.m_SelectedSprite
+      value: 
+      objectReference: {fileID: 191923712, guid: c8c6266c7d9efac4b8add02e9aa15c0b, type: 3}
+    - target: {fileID: 361011232853150640, guid: cc03f8d84f9869145a0089504b75267b, type: 3}
+      propertyPath: m_SpriteState.m_HighlightedSprite
+      value: 
+      objectReference: {fileID: 191923712, guid: c8c6266c7d9efac4b8add02e9aa15c0b, type: 3}
+    - target: {fileID: 361011232853150640, guid: cc03f8d84f9869145a0089504b75267b, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -37,11 +53,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 361011233177889312, guid: cc03f8d84f9869145a0089504b75267b, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 361011233391836957, guid: cc03f8d84f9869145a0089504b75267b, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2325722760243685707, guid: cc03f8d84f9869145a0089504b75267b, type: 3}
       propertyPath: m_Pivot.x
@@ -73,7 +89,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2325722760243685707, guid: cc03f8d84f9869145a0089504b75267b, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 400
+      value: 540
       objectReference: {fileID: 0}
     - target: {fileID: 2325722760243685707, guid: cc03f8d84f9869145a0089504b75267b, type: 3}
       propertyPath: m_SizeDelta.y
@@ -109,11 +125,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2325722760243685707, guid: cc03f8d84f9869145a0089504b75267b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -409
       objectReference: {fileID: 0}
     - target: {fileID: 2325722760243685707, guid: cc03f8d84f9869145a0089504b75267b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -17
       objectReference: {fileID: 0}
     - target: {fileID: 2325722760243685707, guid: cc03f8d84f9869145a0089504b75267b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -131,13 +147,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Music volume control Variant
       objectReference: {fileID: 0}
-    - target: {fileID: 2718997255842702717, guid: cc03f8d84f9869145a0089504b75267b, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3335421945540040044, guid: cc03f8d84f9869145a0089504b75267b, type: 3}
       propertyPath: m_text
       value: Music
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335421945540040044, guid: cc03f8d84f9869145a0089504b75267b, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335421945540040044, guid: cc03f8d84f9869145a0089504b75267b, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc03f8d84f9869145a0089504b75267b, type: 3}

@@ -54,6 +54,10 @@ MonoBehaviour:
     m_Localized: Continuar
     m_Metadata:
       m_Items: []
+  - m_Id: 6951368275177472
+    m_Localized: "\xA1Felicitaciones, has ganado!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
