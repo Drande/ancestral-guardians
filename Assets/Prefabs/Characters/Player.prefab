@@ -422,9 +422,9 @@ MonoBehaviour:
     m_Bits: 640
   hasKey: 0
   playerSpeed: 8
-  dashForce: 40
+  dashForce: 50
   dashDuration: 0.1
-  dashCoolDown: 0.7
+  dashCoolDown: 5
   dashTimeLeft: 1
 --- !u!114 &7020684325531516197
 MonoBehaviour:
@@ -515,6 +515,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: a23b440b-badf-41e9-8168-9bd5ee372c27
     m_ActionName: EnvironmentActions/Interact[/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 45bd2cca-98d3-4097-bd1e-0dfb4dec0f79
+    m_ActionName: EnvironmentActions/Pause[/Keyboard/escape,/Keyboard/p]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: CombatActions
@@ -532,7 +536,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4f3649c07566274aa19b8e3bcf61437, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 300
+  maxHealth: 150
   inmmunityCooldown: 0
 --- !u!114 &462069806
 MonoBehaviour:

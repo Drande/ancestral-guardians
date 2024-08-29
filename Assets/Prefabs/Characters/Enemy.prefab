@@ -334,7 +334,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   weapon: {fileID: 1389766403}
-  attackPower: 10
+  attackPower: 25
 --- !u!95 &8208305424468221380
 Animator:
   serializedVersion: 5
