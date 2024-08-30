@@ -8,7 +8,18 @@ public class AudioOptions : MonoBehaviour
 
     void Start()
     {
-        musicSlider.value = AudioManager.Instance.MusicVolume;
-        sfxSlider.value = AudioManager.Instance.SfxVolume;
+        musicSlider.SetValueWithoutNotify(AudioManager.Instance.MusicVolume);
+        musicSlider.onValueChanged.AddListener((sliderValue) => {
+            AudioManager.Instance.MusicVolume = sliderValue;
+        });
+        sfxSlider.SetValueWithoutNotify(AudioManager.Instance.SfxVolume);
+        sfxSlider.onValueChanged.AddListener((sliderValue) => {
+            AudioManager.Instance.SfxVolume = sliderValue;
+        });
+    }
+
+    private void OnDestroy() {
+        musicSlider.onValueChanged.RemoveAllListeners();
+        sfxSlider.onValueChanged.RemoveAllListeners();
     }
 }
