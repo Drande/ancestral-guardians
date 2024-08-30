@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     private void Awake() {
         
         if(Instance == null) {
-        PlayerPrefs.DeleteAll();
+        //PlayerPrefs.DeleteAll();
             Instance = this;
             if(gameObject.transform.parent == null) {
                 DontDestroyOnLoad(gameObject);
