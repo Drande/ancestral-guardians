@@ -166,6 +166,38 @@ PrefabInstance:
       propertyPath: m_Colors.m_HighlightedColor.r
       value: 0.5821022
       objectReference: {fileID: 0}
+    - target: {fileID: 912225422337752046, guid: 7346805cb500f08419c941c17e510dd3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 912225422337752046, guid: 7346805cb500f08419c941c17e510dd3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 912225422337752046, guid: 7346805cb500f08419c941c17e510dd3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 274260404470271107, guid: d47afe7282c6d1146af91de323e7a4a9, type: 3}
+    - target: {fileID: 912225422337752046, guid: 7346805cb500f08419c941c17e510dd3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 912225422337752046, guid: 7346805cb500f08419c941c17e510dd3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PlaySFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 912225422337752046, guid: 7346805cb500f08419c941c17e510dd3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: AudioManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 912225422337752046, guid: 7346805cb500f08419c941c17e510dd3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 912225422337752046, guid: 7346805cb500f08419c941c17e510dd3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 912225422337752047, guid: 7346805cb500f08419c941c17e510dd3, type: 3}
       propertyPath: m_SizeDelta.x
       value: 302.6754
