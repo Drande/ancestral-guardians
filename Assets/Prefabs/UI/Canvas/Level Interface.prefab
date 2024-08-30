@@ -66,7 +66,7 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1000
   m_TargetDisplay: 0
 --- !u!114 &6468576735239316200
 MonoBehaviour:
@@ -362,6 +362,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Control Panel
       objectReference: {fileID: 0}
+    - target: {fileID: 952542067479951660, guid: 84af3a89dc629c340ac570b096b0ed85, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 952542067479951661, guid: 84af3a89dc629c340ac570b096b0ed85, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -468,6 +472,26 @@ PrefabInstance:
     - target: {fileID: 520658664274719771, guid: 70fabd71fb2ec8b4db66c8527fde6228, type: 3}
       propertyPath: m_Name
       value: Options Panel Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 520658664274719771, guid: 70fabd71fb2ec8b4db66c8527fde6228, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2866841882534817119, guid: 70fabd71fb2ec8b4db66c8527fde6228, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2866841882958477410, guid: 70fabd71fb2ec8b4db66c8527fde6228, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6282763094786221277, guid: 70fabd71fb2ec8b4db66c8527fde6228, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6282763095042044384, guid: 70fabd71fb2ec8b4db66c8527fde6228, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7155808999535990300, guid: 70fabd71fb2ec8b4db66c8527fde6228, type: 3}
       propertyPath: m_Pivot.x
@@ -580,6 +604,22 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3557466308740921167, guid: f50622fb4b58c394ba995bebde82b04b, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3557466308740921167, guid: f50622fb4b58c394ba995bebde82b04b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4422863709822382467, guid: f50622fb4b58c394ba995bebde82b04b, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4422863709822382467, guid: f50622fb4b58c394ba995bebde82b04b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6807087709702921106, guid: f50622fb4b58c394ba995bebde82b04b, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -665,9 +705,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7511504528153899940, guid: f50622fb4b58c394ba995bebde82b04b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511504528153899940, guid: f50622fb4b58c394ba995bebde82b04b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3734210343906121191}
+    - target: {fileID: 7511504528153899940, guid: f50622fb4b58c394ba995bebde82b04b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 3734210343906121191}
+    - target: {fileID: 7511504528153899940, guid: f50622fb4b58c394ba995bebde82b04b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f50622fb4b58c394ba995bebde82b04b, type: 3}
 --- !u!1 &2787286509223266389 stripped

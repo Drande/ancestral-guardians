@@ -3,6 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(Collider2D))]
 public class InteractionsController : MonoBehaviour {
     private IInteractable interactable;
+    [SerializeField] private GameObject indicator;
 
     public void OnInteraction()
     {
@@ -14,6 +15,7 @@ public class InteractionsController : MonoBehaviour {
             interactable?.OnLeave();
             interactable = newInteractable;
             interactable.OnEnter();
+            indicator.SetActive(true);
         }
     }
 
@@ -21,6 +23,7 @@ public class InteractionsController : MonoBehaviour {
         if(other.TryGetComponent<IInteractable>(out var abandonedInteractable)) {
             if(interactable == abandonedInteractable) {
                 interactable = null;
+                indicator.SetActive(false);
             }
         }
     }

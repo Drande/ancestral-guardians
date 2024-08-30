@@ -121,11 +121,9 @@ public class AudioManager : MonoBehaviour
         SetMasterVolume(MasterVolume);
     }
 
-    public void SetMusicVolume(Slider slider) => MusicVolume = slider.value;
-    public void SetSfxVolume(Slider slider) => SfxVolume = slider.value;
-    public void SetMusicVolume(float volume) => SetVolume(MusicVolumeKey, volume);
-    public void SetSfxVolume(float volume) => SetVolume(SfxVolumeKey, volume);
-    public void SetMasterVolume(float volume) => SetVolume(MasterVolumeKey, volume);
+    private void SetMusicVolume(float volume) => SetVolume(MusicVolumeKey, volume);
+    private void SetSfxVolume(float volume) => SetVolume(SfxVolumeKey, volume);
+    private void SetMasterVolume(float volume) => SetVolume(MasterVolumeKey, volume);
     private void SetVolume(string key, float volume) => masterMixer.SetFloat(key, Mathf.Log10(Mathf.Clamp(volume, 0.0001f, 1.0f)) * 20);
 
     private void HandleSceneChange(Scene scene)

@@ -430,6 +430,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Credits Panel
       objectReference: {fileID: 0}
+    - target: {fileID: 1147445339951318522, guid: 0dd7184d76f6d81448aaacfd5da39901, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7754003809466705917, guid: 0dd7184d76f6d81448aaacfd5da39901, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -912,19 +916,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2866841882534817119, guid: 70fabd71fb2ec8b4db66c8527fde6228, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2866841882958477410, guid: 70fabd71fb2ec8b4db66c8527fde6228, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6282763094786221277, guid: 70fabd71fb2ec8b4db66c8527fde6228, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6282763095042044384, guid: 70fabd71fb2ec8b4db66c8527fde6228, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7155808999535990300, guid: 70fabd71fb2ec8b4db66c8527fde6228, type: 3}
       propertyPath: m_Pivot.x
