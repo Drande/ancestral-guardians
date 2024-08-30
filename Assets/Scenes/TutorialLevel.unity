@@ -30260,6 +30260,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 462069806, guid: d3d102bec4b7aca419b1f8992522b011, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2094449644}
+    - target: {fileID: 462069806, guid: d3d102bec4b7aca419b1f8992522b011, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
     - target: {fileID: 462069813, guid: d3d102bec4b7aca419b1f8992522b011, type: 3}
       propertyPath: m_Size.x
       value: 0.7339116
@@ -36206,6 +36214,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4495720329208446937, guid: 85554b6bf3f941c4eb5ed914186f071f, type: 3}
   m_PrefabInstance: {fileID: 2080037445}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2094449644 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9204242993856837741, guid: 3fc2d9aa6bf18684aa9fa8c774c4cb2d, type: 3}
+  m_PrefabInstance: {fileID: 3848140794637905355}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2096437001
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36658,9 +36671,21 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -37.32715
       objectReference: {fileID: 0}
+    - target: {fileID: 5200821078100494650, guid: 3fc2d9aa6bf18684aa9fa8c774c4cb2d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5200821078490602503, guid: 3fc2d9aa6bf18684aa9fa8c774c4cb2d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5283152903084840696, guid: 3fc2d9aa6bf18684aa9fa8c774c4cb2d, type: 3}
       propertyPath: m_Name
       value: Level Interface
+      objectReference: {fileID: 0}
+    - target: {fileID: 5283152903084840696, guid: 3fc2d9aa6bf18684aa9fa8c774c4cb2d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5579492155487218315, guid: 3fc2d9aa6bf18684aa9fa8c774c4cb2d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -36669,6 +36694,14 @@ PrefabInstance:
     - target: {fileID: 5579492155487218315, guid: 3fc2d9aa6bf18684aa9fa8c774c4cb2d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: CompleteTutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217265593040817792, guid: 3fc2d9aa6bf18684aa9fa8c774c4cb2d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217265593531521981, guid: 3fc2d9aa6bf18684aa9fa8c774c4cb2d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3fc2d9aa6bf18684aa9fa8c774c4cb2d, type: 3}

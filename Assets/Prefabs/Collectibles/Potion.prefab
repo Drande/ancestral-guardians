@@ -125,8 +125,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07469a9d437ca3e4a8a639263030bf5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fixedAmount: 25
-  percentage: 0.1
+  fixedAmount: 5
+  percentage: 0.2
+  healSfx: heal01
 --- !u!114 &6316077175459481664
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Health : MonoBehaviour, IDamageable {
     [SerializeField] private int maxHealth = 100;
+    [SerializeField] private string damageSfx;
     private int health;
     public event Action<float> OnRateChanged;
     [SerializeField] private float inmmunityCooldown = 0;
@@ -21,6 +22,7 @@ public class Health : MonoBehaviour, IDamageable {
         if(hasInmunity) return;
         if(health == 0) return;
         SceneTextPool.Instance.DisplayAt(transform.position, amount.ToString());
+        AudioManager.Instance.PlaySFX(damageSfx);
         health = Math.Clamp(health - amount, 0, maxHealth);
         NotifyRate();
         if(health == 0) {
