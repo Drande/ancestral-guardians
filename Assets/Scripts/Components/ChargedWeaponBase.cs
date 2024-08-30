@@ -9,5 +9,5 @@ public abstract class ChargedWeaponBase : MonoBehaviour {
         attacks = GetComponentsInChildren<IChargedAttack>();
     }
 
-    public abstract void Attack(LayerMask layerMask, float attackPower);
+    public abstract void Attack(LayerMask layerMask, float attackPower, Action onChargeCompleted);
 }

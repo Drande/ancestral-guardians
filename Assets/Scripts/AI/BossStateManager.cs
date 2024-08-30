@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class BossStateManager : MonoBehaviour {
@@ -41,5 +42,10 @@ public class BossStateManager : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D other) {
         currentState.OnTriggerEnter2D(this, other);
+    }
+
+    public void AnimateAttack()
+    {
+        animator.SetTrigger("attack_b");
     }
 }

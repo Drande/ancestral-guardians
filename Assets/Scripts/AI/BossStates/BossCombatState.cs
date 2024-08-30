@@ -22,7 +22,9 @@ public class BossCombatState : BossState
         }
         
         if(context.weapon.IsReady()) {
-            context.weapon.Attack(context.layerMask, 10);
+            context.weapon.Attack(context.layerMask, 10, () => {
+                context.AnimateAttack();
+            });
         }
     }
 }

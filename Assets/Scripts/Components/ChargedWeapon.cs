@@ -14,11 +14,12 @@ public class ChargedWeapon : ChargedWeaponBase {
         return attacks.Any(a => a.IsReady());
     }
 
-    public override void Attack(LayerMask layerMask, float attackPower) {
+    public override void Attack(LayerMask layerMask, float attackPower, Action onChargeCompleted = null) {
         var attack = attacks.First(a => a.IsReady());
         IsAttacking = true;
         attack?.Charge(() => {
             IsAttacking = false;
+            onChargeCompleted?.Invoke();
             attack.PerformAttack(layerMask, attackPower);
         });
     }
