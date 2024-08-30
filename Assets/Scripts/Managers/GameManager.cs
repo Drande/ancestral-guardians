@@ -11,7 +11,9 @@ public class GameManager : MonoBehaviour
     public event Action<bool> OnPauseChanged;
 
     private void Awake() {
+        
         if(Instance == null) {
+        PlayerPrefs.DeleteAll();
             Instance = this;
             if(gameObject.transform.parent == null) {
                 DontDestroyOnLoad(gameObject);

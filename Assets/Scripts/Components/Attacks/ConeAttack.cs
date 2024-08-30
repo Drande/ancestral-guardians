@@ -1,10 +1,12 @@
 using System.Linq;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class ConeAttack : MonoBehaviour, IAttack {
     [SerializeField] private float damageMultiplier = 1.0f;
     [SerializeField] protected float length = 5f;
     [SerializeField] private string attackSfx;
+    [SerializeField] GameObject particle;
     [Range(1, 360)] public int angleRange = 150;
 
     public void PerformAttack(LayerMask layerMask, float attackPower)
@@ -15,6 +17,7 @@ public class ConeAttack : MonoBehaviour, IAttack {
         {
             if (hit.collider.gameObject.TryGetComponent<IDamageable>(out var target))
             {
+                Instantiate(particle, new Vector3(hit.point.x,hit.point.y,-5),Quaternion.identity);
                 target.TakeDamage((int)(attackPower * damageMultiplier));
             }
         }

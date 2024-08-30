@@ -891,6 +891,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7408637250473573785, guid: 2b8f57f4293a6334d8ddc6d4f4021273, type: 3}
+      propertyPath: particle
+      value: 
+      objectReference: {fileID: 3336718607051970111, guid: 37f910222c436664d9ddca943f78a641, type: 3}
+    - target: {fileID: 7408637250473573785, guid: 2b8f57f4293a6334d8ddc6d4f4021273, type: 3}
       propertyPath: attackSfx
       value: attack01
       objectReference: {fileID: 0}

@@ -6,6 +6,7 @@ public class LevelInterface : MonoBehaviour
     [SerializeField] private GameObject pausePanel;
     [SerializeField] private GameObject gameOverPanel;
     [SerializeField] private GameObject wonPanel;
+    [SerializeField] private string gameOverSfx, wonSfx;
 
     private void Awake() {
         if(Instance == null) {
@@ -29,10 +30,12 @@ public class LevelInterface : MonoBehaviour
     }
 
     public void GameOver() {
+        AudioManager.Instance.PlaySFX(gameOverSfx);
         Instance.gameOverPanel.SetActive(true);
     }
 
     public void Won() {
+        AudioManager.Instance.PlaySFX(wonSfx);
         Instance.wonPanel.SetActive(true);
     }
 }

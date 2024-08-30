@@ -123,6 +123,8 @@ MonoBehaviour:
   pausePanel: {fileID: 584738396061466678}
   gameOverPanel: {fileID: 9204242993856837741}
   wonPanel: {fileID: 5579492154321267434}
+  gameOverSfx: GameOver
+  wonSfx: Victory
 --- !u!1001 &1917811966603634660
 PrefabInstance:
   m_ObjectHideFlags: 0
