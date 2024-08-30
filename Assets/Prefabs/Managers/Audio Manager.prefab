@@ -61,8 +61,32 @@ MonoBehaviour:
   - audioClip: {fileID: 8300000, guid: 5f4236e822a187241a0f4133bd1359d2, type: 3}
     name: Maze
   sfxSounds:
-  - audioClip: {fileID: 8300000, guid: 5a0d0d51cbe7d4f458d2ec0a233b584a, type: 3}
+  - audioClip: {fileID: 8300000, guid: e5523e4e737332044b2340a7346a87d4, type: 3}
     name: attack01
+  - audioClip: {fileID: 8300000, guid: 8bcbb857287eda14d9721a29ec403e35, type: 3}
+    name: attack02
+  - audioClip: {fileID: 8300000, guid: 47f730e0b894d3d4d90b77f4bdd0072b, type: 3}
+    name: attack03
+  - audioClip: {fileID: 8300000, guid: 14eb6a8442d405e45aac2a18e234676d, type: 3}
+    name: hurt01
+  - audioClip: {fileID: 8300000, guid: 73ab382eec11c8340b4d898557ed4119, type: 3}
+    name: hurt02
+  - audioClip: {fileID: 8300000, guid: 2a695fc06cefc3c47b20640ae25ddebd, type: 3}
+    name: dash01
+  - audioClip: {fileID: 8300000, guid: 647188c78ebed224589795fa77aff572, type: 3}
+    name: heal01
+  - audioClip: {fileID: 8300000, guid: c58534edd11062a48baa20bc5382c814, type: 3}
+    name: BreakCrate
+  - audioClip: {fileID: 8300000, guid: f37ae52d5810fd046afa6aa3c676ccd7, type: 3}
+    name: StartGame
+  - audioClip: {fileID: 8300000, guid: 69967170a5c6a074c8290e6fa792bc80, type: 3}
+    name: Button
+  - audioClip: {fileID: 8300000, guid: 4dbfbd1a56081db4ca174255a4d56b1f, type: 3}
+    name: Victory
+  - audioClip: {fileID: 8300000, guid: 38aefa2565c7fc74094ae6632a93e2ba, type: 3}
+    name: GameOver
+  - audioClip: {fileID: 8300000, guid: 51590e3c6faf1c244acdab1fc0b9b0f5, type: 3}
+    name: pickup01
   musicSource: {fileID: 274260404827659225}
   sfxSource: {fileID: 274260406244230466}
   masterMixer: {fileID: 24100000, guid: edea291aa456d2c4889dadaf32993097, type: 2}

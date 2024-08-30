@@ -424,6 +424,7 @@ MonoBehaviour:
   attackLayer:
     serializedVersion: 2
     m_Bits: 640
+  dashSfx: dash01
   hasKey: 0
   playerSpeed: 8
   dashForce: 50
@@ -541,6 +542,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 150
+  damageSfx: hurt02
   inmmunityCooldown: 0
 --- !u!114 &462069806
 MonoBehaviour:

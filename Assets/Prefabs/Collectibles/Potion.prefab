@@ -127,6 +127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fixedAmount: 5
   percentage: 0.2
+  healSfx: heal01
 --- !u!114 &6316077175459481664
 MonoBehaviour:
   m_ObjectHideFlags: 0
