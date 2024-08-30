@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private Weapon weapon;
     [SerializeField] private LayerMask attackLayer;
+    [SerializeField] private string dashSfx;
     private Animator animator;
     private Health health;
     private bool isDead;
@@ -130,6 +131,7 @@ public class PlayerController : MonoBehaviour
 
     public void StartDashing()
     {
+        AudioManager.Instance.PlaySFX(dashSfx);
         isDashing = true;
         canDash = false;
         dashTimeLeft = dashDuration;

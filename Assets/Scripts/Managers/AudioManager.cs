@@ -132,9 +132,28 @@ public class AudioManager : MonoBehaviour
     {
         switch (scene.name)
         {
-            default:
-                PlayMusic("Background01");
+            case "Main Menu":
+                PlayMusic("MainMenu");
                 break;
+            case "TutorialLevel":
+                PlayMusic("Tutorial");
+                break;
+            case "Lobby":
+                PlayMusic("Lobby");
+                break;
+            case "ArenaLevel":
+                PlayMusic("Arena");
+                break;
+            case "DarkLevel":
+                PlayMusic("Dark");
+                break;
+            case "MazeLevel":
+                PlayMusic("Maze");
+                break;
+            default:
+                PlayMusic("MainMenu");
+                break;
+               
         }
     }
 
