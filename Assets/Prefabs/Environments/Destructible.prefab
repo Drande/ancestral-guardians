@@ -154,3 +154,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e835666e58f3fa4fa37b8d867cff0e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  breakSfx: BreakCrate

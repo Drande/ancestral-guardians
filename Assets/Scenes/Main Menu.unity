@@ -1060,6 +1060,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5546328421269552114, guid: c75b6034712a41b4d8a090338b923abd, type: 3}
+      propertyPath: sfxSounds.Array.data[7].audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3bf4fef2d8a444e48b152224e2c924a1, type: 3}
     - target: {fileID: 5707989489913415310, guid: c75b6034712a41b4d8a090338b923abd, type: 3}
       propertyPath: m_Name
       value: Managers

@@ -182,6 +182,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: a23b440b-badf-41e9-8168-9bd5ee372c27
     m_ActionName: EnvironmentActions/Interact[/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 45bd2cca-98d3-4097-bd1e-0dfb4dec0f79
+    m_ActionName: EnvironmentActions/Pause[/Keyboard/escape,/Keyboard/p]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: EnvironmentActions
@@ -420,6 +424,7 @@ MonoBehaviour:
   attackLayer:
     serializedVersion: 2
     m_Bits: 640
+  dashSfx: dash01
   hasKey: 0
   playerSpeed: 8
   dashForce: 50
@@ -537,6 +542,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 150
+  damageSfx: hurt02
   inmmunityCooldown: 0
 --- !u!114 &462069806
 MonoBehaviour:
