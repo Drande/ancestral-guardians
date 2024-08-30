@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
     private GameManager() {}
     public bool IsPaused => Time.timeScale == 0;
+    private bool IsBusy = false;
     public event Action<bool> OnPauseChanged;
 
     private void Awake() {
@@ -21,13 +22,15 @@ public class GameManager : MonoBehaviour
     }
 
     public void LoadMenu() {
+        if(IsBusy) return;
         if(IsPaused) TogglePause();
-        SceneManager.LoadScene(GameScenes.MainMenu);
+        LoadScene(GameScenes.MainMenu);
     }
 
     public void ResetLevel() {
+        if(IsBusy) return;
         if(IsPaused) TogglePause();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void LoadGame() {
@@ -35,19 +38,34 @@ public class GameManager : MonoBehaviour
         var playerData = PlayerManager.Instance.Player;
         // Load first tutorial level directly if player has not completed any levels.
         if(SceneManager.GetActiveScene().name == GameScenes.MainMenu && !playerData.HasTutorialCompleted) {
-            SceneManager.LoadScene(GameScenes.TutorialLevel);
+            LoadScene(GameScenes.TutorialLevel);
             return;
         }
 
-        SceneManager.LoadScene(GameScenes.Lobby);
+        LoadScene(GameScenes.Lobby);
     }
 
     public void LoadLevel(string sceneName) {
+        if(IsBusy) return;
         if(IsPaused) TogglePause();
-        SceneManager.LoadScene(sceneName);
+        LoadScene(sceneName);
+    }
+
+    private void LoadScene(string sceneName)
+    {
+        if(LevelLoader.Instance != null) {
+            IsBusy = true;
+            LevelLoader.Instance.Animate(() => {
+                SceneManager.LoadScene(sceneName);
+                IsBusy = false;
+            });
+        } else {
+            SceneManager.LoadScene(sceneName);
+        }
     }
 
     public void CompleteLevel(int level) {
+        if(IsBusy) return;
         var player = PlayerManager.Instance.Player;
         if(player.LevelsCompleted < level) {
             PlayerManager.Instance.UpdateLevelCompleted(level);
@@ -56,6 +74,7 @@ public class GameManager : MonoBehaviour
     }
 
     public void CompleteTutorial() {
+        if(IsBusy) return;
         PlayerManager.Instance.CompleteTutorial();
         LoadGame();
     }
