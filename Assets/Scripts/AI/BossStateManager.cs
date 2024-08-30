@@ -7,8 +7,11 @@ public class BossStateManager : MonoBehaviour {
     public Transform target;
     public LayerMask layerMask;     // Layer mask to filter which objects are hit by the raycast
     public ChargedWeapon weapon;
+    private Animator animator;
+    private Vector2 lastDirection;
 
     private void Start() {
+        animator = GetComponent<Animator>();
         currentState = idleState;
     }
 
@@ -19,6 +22,13 @@ public class BossStateManager : MonoBehaviour {
     public void SwitchState(BossState newState) {
         currentState = newState;
         currentState.EnterState(this);
+    }
+
+    public void LookAt(Vector2 direction) {
+        if(direction == lastDirection) return;
+        lastDirection = direction;
+        animator.SetFloat("speed_x_f", direction.x*0.1f);
+        animator.SetFloat("speed_y_f", direction.y*0.1f);
     }
 
     public void StartCombat() {

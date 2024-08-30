@@ -1,3 +1,4 @@
+using UnityEditor.Localization.Plugins.XLIFF.V12;
 using UnityEngine;
 
 public class BossCombatState : BossState
@@ -15,7 +16,9 @@ public class BossCombatState : BossState
     public override void UpdateState(BossStateManager context)
     {
         if(!context.weapon.IsAttacking) {
-            context.transform.LookAt2D(context.target);
+            var direction = ((Vector2)context.transform.position).CalculateFourSideDirection(context.target.transform.position);
+            context.LookAt(direction);
+            context.weapon.transform.LookAt2D(context.target);
         }
         
         if(context.weapon.IsReady()) {

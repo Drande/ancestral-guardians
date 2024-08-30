@@ -43,4 +43,24 @@ public static class VectorExtensions
 
         return finalDirection;
     }
+
+    public static Vector2 CalculateFourSideDirection(this Vector2 currentPosition, Vector2 targetPosition)
+    {
+        var difference = targetPosition - currentPosition;
+
+        // Normalize the difference to get a unit vector pointing toward the target
+        var normalizedDirection = difference.normalized;
+
+        // Determine the closest cardinal direction
+        if (Mathf.Abs(normalizedDirection.x) > Mathf.Abs(normalizedDirection.y))
+        {
+            // The object should move horizontally
+            return new Vector2(Mathf.Sign(normalizedDirection.x), 0);
+        }
+        else
+        {
+            // The object should move vertically
+            return new Vector2(0, Mathf.Sign(normalizedDirection.y));
+        }
+    }
 }
