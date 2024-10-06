@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
@@ -164,7 +165,7 @@ public class AudioManager : MonoBehaviour
     {
         if(string.IsNullOrWhiteSpace(name)) return;
         var sound = Array.Find(musicSounds, s => s.name == name);
-        if (sound != null)
+        if (sound != null && !Instance.musicSource.IsDestroyed())
         {
             musicSource.Stop();
             musicSource.loop = true;
@@ -186,7 +187,7 @@ public class AudioManager : MonoBehaviour
     {
         if(string.IsNullOrWhiteSpace(name)) return;
         var sound = Array.Find(Instance.sfxSounds, s => s.name == name);
-        if (sound != null)
+        if (sound != null && !Instance.sfxSource.IsDestroyed())
         {
             Instance.sfxSource.clip = sound.audioClip;
             Instance.sfxSource.Play();
