@@ -51,6 +51,18 @@ PrefabInstance:
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.UI.Slider, UnityEngine.UI
       objectReference: {fileID: 0}
+    - target: {fileID: 361011232874403229, guid: cc03f8d84f9869145a0089504b75267b, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 361011232874403229, guid: cc03f8d84f9869145a0089504b75267b, type: 3}
+      propertyPath: m_Color.g
+      value: 0.42340425
+      objectReference: {fileID: 0}
+    - target: {fileID: 361011232874403229, guid: cc03f8d84f9869145a0089504b75267b, type: 3}
+      propertyPath: m_Color.r
+      value: 0.16509432
+      objectReference: {fileID: 0}
     - target: {fileID: 361011233177889312, guid: cc03f8d84f9869145a0089504b75267b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
