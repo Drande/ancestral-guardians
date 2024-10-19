@@ -435,12 +435,16 @@ PrefabInstance:
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 912225422337752047, guid: 7346805cb500f08419c941c17e510dd3, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 912225422337752047, guid: 7346805cb500f08419c941c17e510dd3, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 319.4955
+      value: 350
       objectReference: {fileID: 0}
     - target: {fileID: 912225422337752047, guid: 7346805cb500f08419c941c17e510dd3, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 170.308
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 912225422337752047, guid: 7346805cb500f08419c941c17e510dd3, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -448,7 +452,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 912225422337752047, guid: 7346805cb500f08419c941c17e510dd3, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 121
+      value: 190
       objectReference: {fileID: 0}
     - target: {fileID: 912225423108546942, guid: 7346805cb500f08419c941c17e510dd3, type: 3}
       propertyPath: m_fontSize
@@ -500,11 +504,11 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 358df3819c404ae4095e0d6d369d14b8, type: 2}
     - target: {fileID: 912225423108546943, guid: 7346805cb500f08419c941c17e510dd3, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.80000305
+      value: -0.000015258789
       objectReference: {fileID: 0}
     - target: {fileID: 912225423108546943, guid: 7346805cb500f08419c941c17e510dd3, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1191508031341513519, guid: 7346805cb500f08419c941c17e510dd3, type: 3}
       propertyPath: m_Type
